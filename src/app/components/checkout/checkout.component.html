@@ -1,0 +1,216 @@
+ <div class="checkout-area mb-60px" style="    padding-top: 60px;background: white;">
+        <div class="container">
+        <div class="container-inner">
+                 <form [formGroup]="ngFormSendOrder" (ngSubmit) ="okOrder()" >
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="billing-info-wrap">
+                            <h3>Detalles para pago</h3>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="billing-info mb-20px">
+                                        <!-- <label>Nombre completo</label> -->
+                                        <div class="form-group pos_rel">
+                                            <input  id="personaContacto"  type="text"placeholder="Nombre" [(ngModel)]="order.personaContacto" class="form-control lgn_input" formControlName="personaContacto"
+                                          [ngClass]="{ 'is-invalid': submitted && fval.personaContacto.errors }"
+                                          required>
+                                            <i class="uil uil-user-circle lgn_icon"></i>
+                                            <span class="required"></span>
+                                            <div *ngIf="submitted && fval.personaContacto.errors" class="invalid-feedback">
+                                                <div *ngIf="fval.personaContacto.errors.required" class="errorLabel">
+                                              * Nombre de la persona que recibe.
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  
+                               
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-20px">
+                                        <label>Telefono</label>
+                                       <!--  <input type="text" /> -->
+                                        <div class="form-group pos_rel">
+                                            <input  id="telefono"  type="tel"placeholder="Teléfono de contacto" [(ngModel)]="order.telefono" class="form-control lgn_input" formControlName="telefono"
+                                            [ngClass]="{ 'is-invalid': submitted && fval.telefono.errors }"
+                                            required>
+                                            <i class="uil uil-mobile-android-alt lgn_icon"></i>
+                                            <span class="required"></span>
+                                            <div *ngIf="submitted && fval.telefono.errors" class="invalid-feedback">
+                                                <div *ngIf="fval.telefono.errors.required" class="errorLabel">
+                                                * Un número de teléfono de la persona que recibe.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-20px">
+                                        <label>Correo electronico</label>
+                                      <!--   <input type="text" /> -->
+
+                                        <div class="form-group pos_rel">
+                                            <input  id="email" name="emailaddress" type="email"placeholder="Email" [(ngModel)]="order.email" class="form-control lgn_input" formControlName="email"
+                                            [ngClass]="{ 'is-invalid': submitted && fval.email.errors }"
+                                            required>
+                                            <i class="uil uil-envelope lgn_icon"></i>
+                                            <span class="required"></span>
+                                            <div *ngIf="submitted && fval.email.errors" class="invalid-feedback">
+                                                <div *ngIf="fval.email.errors.required" class="errorLabel">
+                                                * Una dirección de correo electrónico para comunicarnos.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                               <!--  <div class="col-lg-12">
+                                    <div class="billing-select mb-20px">
+                                        <label>Estado</label>
+                                        <select>
+                                            <option>Seleccionar estado</option>
+                                            <option>Azerbaijan</option>
+                                            <option>Bahamas</option>
+                                            <option>Bahrain</option>
+                                            <option>Bangladesh</option>
+                                            <option>Barbados</option>
+                                        </select>
+                                    </div>
+                                </div> -->
+                              <!--   <div class="col-lg-12">
+                                    <div class="form-group "style="text-align: center;" >
+                                        <label class="control-label"style="font-size: 18px;" >Lugar de entrega</label>
+                                       
+                                    </div>
+                                </div> -->
+                              
+                                
+                            </div>
+                            
+                            <div class="additional-info-wrap">
+                                <!-- <h4>Información adicional</h4> -->
+                                <div class="additional-info">
+                                    <label>Direccion de entrega</label>
+                                   <textarea class="form-control height-80" id="direccion" formControlName="direccion" placeholder="Dirección (Urbanización, # de casa y punto de referencia)" [(ngModel)]="order.direccion"
+                                      [ngClass]="{ 'is-invalid': submitted && fval.direccion.errors }"
+                                      required></textarea>
+                                        <span class="required"></span>
+                                        <div *ngIf="submitted && fval.direccion.errors" class="invalid-feedback">
+                                            <div *ngIf="fval.direccion.errors.required" class="errorLabel">
+                                          * Dirección donde deseas que llevemos tu pedido.
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mt-md-30px mt-lm-30px ">
+                        <div class="your-order-area">
+                            <h3>Order de compra</h3>
+                            <div class="your-order-wrap gray-bg-4">
+                                <div class="your-order-product-info">
+                                    <div class="your-order-top">
+                                        <ul>
+                                            <li>Productos</li>
+                                            <li>Total</li>
+                                        </ul>
+                                    </div>
+                                    <div class="your-order-middle">
+                                        <ul>
+                                            <li *ngFor="let item of _uw.car"><span class="order-middle-left">{{item.name}} {{item.model}} X {{item.quantity}}</span> <span class="order-price">${{item.quantity*item.price}} </span></li>
+                                          
+                                        </ul>
+                                    </div>
+                                    <div class="your-order-bottom">
+                                        <ul>
+                                            <li class="your-order-shipping">Reparto</li>
+                                            <li>A convenir</li>
+                                        </ul>
+                                    </div>
+                                    <div class="your-order-total">
+                                        <ul>
+                                            <li class="order-total">Total</li>
+                                            <li>${{_uw.total}}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                               
+                              <!--   <div class="payment-method">
+                                    <div class="payment-accordion element-mrg">
+                                        <div class="panel-group" id="accordion">
+                                            <div class="panel payment-accordion">
+                                                <div class="panel-heading" id="method-one">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" routerLink="">
+                                                            Dirección Bancaria
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="method1" class="panel-collapse collapse show">
+                                                    <div class="panel-body">
+                                                        <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="grand-totall">
+                                                <h5>Seleccionar metodo de pago</h5>
+                                                <ul>
+                                                    <li><input type="checkbox" /> Transferencia Zelle <span>$</span></li>
+                                                    <li><input type="checkbox" /> Paypla <span>$</span></li>
+                                                    <li><input type="checkbox" /> Divisa efectivo <span>$</span></li>
+                                                    <li><input type="checkbox" /> Pago en tienda <span>$</span></li>
+                                                </ul>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                 <!-- metodo de paso select -->
+
+                                  <div class="heading_s2">
+                            <h5>Método de pago</h5>
+                        </div>
+                        <div class="custom_select">
+                           <!--  <select>
+                                <option value="bsTansferencia">BsS Transferencia</option>
+                                <option value="bitcoin" (click)="currencyBit()">Bitcoin</option>
+                                <option value="paypal" (click)="currencyPaypal()">PayPal</option>
+                                <option value="bsPago">BsS pago en linea Banco Mercantil</option>
+                                <option value="bsPunto">BsS Punto de venta</option>
+                                <option value="colp">Pesos Colombianos</option>
+                                <option value="usd">$ USD Efectivo</option>
+                                <option value="usd">$ USD Transferencia</option>                           
+                            </select> -->
+                            <select    id="metodo" formControlName="metodo" [(ngModel)]="order.metodo"
+                            [ngClass]="{ 'is-invalid': submitted && fval.metodo.errors }"
+                            required class="nice-select"   (click)="setMetodo()">
+                                <option value="zelle">Zelle</option>
+                                <option value="wells" >WeLLs fargo</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="banesco">Banesco Panama</option>
+                                <option value="bfTransferencia">Bs transferencia</option>
+                                <!-- <option value="colp">Pesos Colombianos</option>
+                                <option value="usd" >$ USD Efectivo</option>
+                                <option value="usdt" >$ USD Transferencia</option>  -->       
+                            </select>
+                            <img src="assets/assetsshadi/images/icons/bancos.png" style="padding-top: 10px;">  
+                              <img src="assets/assetsshadi/images/icons/payment2.png">
+
+                        </div>
+                            </div>
+                            <div class="Place-order mt-25">
+                             <!--     <a routerLink="../cart" class="btn btn-dark btn-hover-primary mb-30px offcanvas-close" >ver carro</a> -->
+                                <a class="btn btn-dark btn-hover-primary "  type="submit"   (click)="okOrder()" >Realizar pedido</a>
+                               <!--   <a class="btn btn-dark btn-hover-primary "  type="submit"   style="background-color: #fbd904;color: black;" (click)="okOrder()">Realizar pedido</a> -->
+                                <!--   <button class="cart-proccess-btn" type="submit"  style="background-color: #fbd904;color: black;">Aceptar</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </form>
+        </div>
+        </div>
+    </div>
