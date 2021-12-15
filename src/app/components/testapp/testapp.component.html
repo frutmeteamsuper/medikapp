@@ -73,8 +73,7 @@
                 </div>
               </div>
             </div>
-              <div class="theme-tab tab-sm chat-tabs">     
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
+             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" data-to="chat-content"><a (click)="setOnline()" class="nav-link button-effect active" id="chat-tab" data-toggle="tab" href="messenger.html#chat" role="tab" aria-controls="chat" aria-selected="true" data-intro="Start chat"><i data-feather="message-square"></i>En linea </a></li>
                 <li (click)="setLocation()" class="nav-item" data-to="call-content"><a class="nav-link button-effect" id="call-tab" data-toggle="tab" href="messenger.html#call" role="tab" aria-controls="call" aria-selected="false"><i data-feather="map-pin"> </i>Ubicación</a></li>
                 <!-- <li class="nav-item" data-to="contact-content"><a class="nav-link button-effect" id="contact-tab" data-toggle="tab" href="messenger.html#contact" role="tab" aria-controls="contact" aria-selected="false"> <i data-feather="users"> </i>Contact</a></li> -->
@@ -96,6 +95,21 @@
                  <a class="icon-btn btn-primary btn-fix outside mainnav"><i data-feather="plus"></i></a>
                 </div>
               </div>
+          </div>
+          <div class="chat custom-scroll">
+            <ul class="chat-cont-setting">
+              <li> <a href="messenger.html#" data-toggle="modal" data-target="#msgchatModal"><span>new chat</span>
+                  <div class="icon-btn btn-outline-primary button-effect btn-sm"><i data-feather="message-square"></i></div></a></li>
+              <li><a href="messenger.html#" data-toggle="modal" data-target="#msgcallModal"><span>new call</span>
+                  <div class="icon-btn btn-outline-success button-effect btn-sm"><i data-feather="phone"></i></div></a></li>
+              <li><a href="messenger.html#" data-toggle="modal" data-target="#exampleModalCenter"><span>new Contact</span>
+                  <div class="icon-btn btn-outline-danger button-effect btn-sm"><i data-feather="users"></i></div></a></li>
+            </ul>
+            <div class="theme-title">
+             
+            </div>
+            <div class="theme-tab tab-sm chat-tabs">     
+             
               <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="chat" role="tabpanel" aria-labelledby="chat-tab"> 
                   <div class="theme-tab">       
@@ -627,20 +641,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="chat custom-scroll">
-            <ul class="chat-cont-setting">
-              <li> <a href="messenger.html#" data-toggle="modal" data-target="#msgchatModal"><span>new chat</span>
-                  <div class="icon-btn btn-outline-primary button-effect btn-sm"><i data-feather="message-square"></i></div></a></li>
-              <li><a href="messenger.html#" data-toggle="modal" data-target="#msgcallModal"><span>new call</span>
-                  <div class="icon-btn btn-outline-success button-effect btn-sm"><i data-feather="phone"></i></div></a></li>
-              <li><a href="messenger.html#" data-toggle="modal" data-target="#exampleModalCenter"><span>new Contact</span>
-                  <div class="icon-btn btn-outline-danger button-effect btn-sm"><i data-feather="users"></i></div></a></li>
-            </ul>
-            <div class="theme-title">
-             
-            </div>
-          
           </div>
         </div>
         <div class="fevorite-tab dynemic-sidebar" id="favourite">
