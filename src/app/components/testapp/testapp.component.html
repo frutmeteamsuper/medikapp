@@ -8,7 +8,7 @@
          </a> -->
          <div class="chitchat-container sidebar-toggle">
       <nav class="main-nav on custom-scroll">
-        <div class="logo-warpper"><a href="messenger.html"><img src="assets/assetsmedik/images/logo/logo.png" alt="logo"/></a></div>
+        <div class="logo-warpper"><a href=""><img src="assets/assetsmedik/images/logo/logo.png" alt="logo"/></a></div>
         <div class="sidebar-main">
           <ul class="sidebar-top">
             <li><a class="button-effect" href="status" data-tippy-content="status" data-intro="Check Status here">
@@ -17,7 +17,7 @@
                 </div></a></li>
             <li><a class="icon-btn btn-light button-effect" href="favourite" data-tippy-content="Favourite"><i class="fa fa-star">               </i></a></li>
             <li><a class="icon-btn btn-light button-effect" href="document" data-tippy-content="Document"> <i class="fa fa-file-text">       </i></a></li>
-            <li><a class="icon-btn btn-light button-effect" href="#contact-list" data-tippy-content="Contact List"> <i class="fa fa-users">  </i></a></li>
+            <li><a class="icon-btn btn-light button-effect" href="contact-list" data-tippy-content="Contact List"> <i class="fa fa-users">  </i></a></li>
             <li>
               <div class="dot-btn dot-danger grow"><a class="icon-btn btn-light button-effect" href="notification" data-tippy-content="Notification"> <i class="fa fa-bell"></i></a></div>
             </li>
@@ -73,20 +73,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="chat custom-scroll">
-            <ul class="chat-cont-setting">
-              <li> <a href="messenger.html#" data-toggle="modal" data-target="#msgchatModal"><span>new chat</span>
-                  <div class="icon-btn btn-outline-primary button-effect btn-sm"><i data-feather="message-square"></i></div></a></li>
-              <li><a href="messenger.html#" data-toggle="modal" data-target="#msgcallModal"><span>new call</span>
-                  <div class="icon-btn btn-outline-success button-effect btn-sm"><i data-feather="phone"></i></div></a></li>
-              <li><a href="messenger.html#" data-toggle="modal" data-target="#exampleModalCenter"><span>new Contact</span>
-                  <div class="icon-btn btn-outline-danger button-effect btn-sm"><i data-feather="users"></i></div></a></li>
-            </ul>
-            <div class="theme-title">
-             
-            </div>
-            <div class="theme-tab tab-sm chat-tabs">     
+              <div class="theme-tab tab-sm chat-tabs">     
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" data-to="chat-content"><a (click)="setOnline()" class="nav-link button-effect active" id="chat-tab" data-toggle="tab" href="messenger.html#chat" role="tab" aria-controls="chat" aria-selected="true" data-intro="Start chat"><i data-feather="message-square"></i>En linea </a></li>
                 <li (click)="setLocation()" class="nav-item" data-to="call-content"><a class="nav-link button-effect" id="call-tab" data-toggle="tab" href="messenger.html#call" role="tab" aria-controls="call" aria-selected="false"><i data-feather="map-pin"> </i>Ubicación</a></li>
@@ -98,7 +85,7 @@
                   <h4>Start New Conversation</h4>
                 </div>
                 <div class="media-body text-right">   
-                  <a class="icon-btn btn-outline-light btn-sm search contact-search" href="messenger.html#"> <i data-feather="search"></i></a>
+                  <a class="icon-btn btn-outline-light btn-sm search contact-search" > <i data-feather="search"></i></a>
                   <form class="form-inline search-form">
                     <div class="form-group">
                       <input class="form-control-plaintext" type="search" placeholder="Search.."/>
@@ -640,6 +627,20 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="chat custom-scroll">
+            <ul class="chat-cont-setting">
+              <li> <a href="messenger.html#" data-toggle="modal" data-target="#msgchatModal"><span>new chat</span>
+                  <div class="icon-btn btn-outline-primary button-effect btn-sm"><i data-feather="message-square"></i></div></a></li>
+              <li><a href="messenger.html#" data-toggle="modal" data-target="#msgcallModal"><span>new call</span>
+                  <div class="icon-btn btn-outline-success button-effect btn-sm"><i data-feather="phone"></i></div></a></li>
+              <li><a href="messenger.html#" data-toggle="modal" data-target="#exampleModalCenter"><span>new Contact</span>
+                  <div class="icon-btn btn-outline-danger button-effect btn-sm"><i data-feather="users"></i></div></a></li>
+            </ul>
+            <div class="theme-title">
+             
+            </div>
+          
           </div>
         </div>
         <div class="fevorite-tab dynemic-sidebar" id="favourite">
