@@ -38,12 +38,30 @@
                   <h2>Medikchat</h2>
                   <h4>Directorio médico </h4>
                 </div>
+
                 <div class="media-body">
                   <a class="icon-btn btn-outline-light button-effect pull-right mobile-back" href="">
                     <i class="ti-angle-right"></i>
                   </a>
                   <a class="icon-btn btn-outline-light button-effect pull-right mainnav" href="">   <i class="ti-layout-grid2"></i>
                   </a>
+                </div>
+              </div>
+              <div class="media">
+                <div> 
+                  <h2>Tu ubicación</h2>
+                  <h4>Start New Conversation</h4>
+                </div>
+                <div class="media-body text-right">   
+                  <a class="icon-btn btn-outline-light btn-sm search contact-search" > <i data-feather="search"></i></a>
+                  <form class="form-inline search-form">
+                    <div class="form-group">
+                      <input class="form-control-plaintext" type="search" placeholder="Search.."/>
+                      <div class="icon-close close-search">                 </div>
+                    </div>
+                  </form>
+                 <!--  <a class="icon-btn btn-primary btn-fix chat-cont-toggle outside mainnav" href="messenger.html#"><i data-feather="plus"></i></a>    -->
+                 <a class="icon-btn btn-primary btn-fix outside mainnav"><i data-feather="plus"></i></a>
                 </div>
               </div>
             </div>
@@ -79,23 +97,7 @@
                 <li (click)="setLocation()" class="nav-item" data-to="call-content"><a class="nav-link button-effect" id="call-tab" data-toggle="tab" href="messenger.html#call" role="tab" aria-controls="call" aria-selected="false"><i data-feather="map-pin"> </i>Ubicación</a></li>
                 <!-- <li class="nav-item" data-to="contact-content"><a class="nav-link button-effect" id="contact-tab" data-toggle="tab" href="messenger.html#contact" role="tab" aria-controls="contact" aria-selected="false"> <i data-feather="users"> </i>Contact</a></li> -->
               </ul>
-               <div class="media">
-                <div> 
-                  <h2>Tu ubicación</h2>
-                  <h4>Start New Conversation</h4>
-                </div>
-                <div class="media-body text-right">   
-                  <a class="icon-btn btn-outline-light btn-sm search contact-search" > <i data-feather="search"></i></a>
-                  <form class="form-inline search-form">
-                    <div class="form-group">
-                      <input class="form-control-plaintext" type="search" placeholder="Search.."/>
-                      <div class="icon-close close-search">                 </div>
-                    </div>
-                  </form>
-                 <!--  <a class="icon-btn btn-primary btn-fix chat-cont-toggle outside mainnav" href="messenger.html#"><i data-feather="plus"></i></a>    -->
-                 <a class="icon-btn btn-primary btn-fix outside mainnav"><i data-feather="plus"></i></a>
-                </div>
-              </div>
+               
             </div>
           </div>
           <div class="chat custom-scroll">
