@@ -12,9 +12,20 @@ export class TestappComponent implements OnInit {
      public _uw:UserWService
      ) { }
    loadAPI = null;  
+       location = false;
+       online = true;
     url="assets/assetsmedik/js/feather-icon/feather.min.js";
     url2 = "assets/assetsmedik/js/feather-icon/feather-icon.js";
     url3 = "assets/assetsmedik/js/script.js";
+
+setOnline(){
+      this.location = false;
+       this.online = true;
+}
+setLocation(){
+      this.location = true;
+       this.online = false;
+}
 
   ngOnInit() {
     this._uw.tixPreview.quantity=1;

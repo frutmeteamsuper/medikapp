@@ -38,14 +38,20 @@
                   <h2>Medikchat</h2>
                   <h4>Directorio médico &#128536;</h4>
                 </div>
-                <div class="media-body"><a class="icon-btn btn-outline-light button-effect pull-right mobile-back" href="messenger.html#"><i class="ti-angle-right"></i></a><a class="icon-btn btn-outline-light button-effect pull-right mainnav" href="messenger.html#"><i class="ti-layout-grid2"></i></a></div>
+                <div class="media-body">
+                  <a class="icon-btn btn-outline-light button-effect pull-right mobile-back" href="">
+                    <i class="ti-angle-right"></i>
+                  </a>
+                  <a class="icon-btn btn-outline-light button-effect pull-right mainnav" href="">   <i class="ti-layout-grid2"></i>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="recent-slider recent-chat owl-carousel owl-theme">
               <div class="item">
                 <div class="recent-box">
                   <div class="dot-btn  grow"></div>
-                  <div style="border-radius: 20px;height: 110px;width: 100%;"><img class="bg-img" src="assets/assetsmedik/images/avtar/cardiologia.jpg" alt="Avatar"/>
+                  <div style="border-radius: 20px;height: 110px;width: 100%;" ><img class="bg-img" src="assets/assetsmedik/images/avtar/cardiologia.jpg" alt="Avatar"/>
                     
                   </div>
                 </div>
@@ -78,34 +84,38 @@
                   <div class="icon-btn btn-outline-danger button-effect btn-sm"><i data-feather="users"></i></div></a></li>
             </ul>
             <div class="theme-title">
-              <div class="media">
+             
+            </div>
+            <div class="theme-tab tab-sm chat-tabs">     
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" data-to="chat-content"><a (click)="setOnline()" class="nav-link button-effect active" id="chat-tab" data-toggle="tab" href="messenger.html#chat" role="tab" aria-controls="chat" aria-selected="true" data-intro="Start chat"><i data-feather="message-square"></i>En linea </a></li>
+                <li (click)="setLocation()" class="nav-item" data-to="call-content"><a class="nav-link button-effect" id="call-tab" data-toggle="tab" href="messenger.html#call" role="tab" aria-controls="call" aria-selected="false"><i data-feather="map-pin"> </i>Ubicación</a></li>
+                <!-- <li class="nav-item" data-to="contact-content"><a class="nav-link button-effect" id="contact-tab" data-toggle="tab" href="messenger.html#contact" role="tab" aria-controls="contact" aria-selected="false"> <i data-feather="users"> </i>Contact</a></li> -->
+              </ul>
+               <div class="media">
                 <div> 
                   <h2>Tu ubicación</h2>
                   <h4>Start New Conversation</h4>
                 </div>
-                <div class="media-body text-right">   <a class="icon-btn btn-outline-light btn-sm search contact-search" href="messenger.html#"> <i data-feather="search"></i></a>
+                <div class="media-body text-right">   
+                  <a class="icon-btn btn-outline-light btn-sm search contact-search" href="messenger.html#"> <i data-feather="search"></i></a>
                   <form class="form-inline search-form">
                     <div class="form-group">
                       <input class="form-control-plaintext" type="search" placeholder="Search.."/>
                       <div class="icon-close close-search">                 </div>
                     </div>
-                  </form><a class="icon-btn btn-primary btn-fix chat-cont-toggle outside" href="messenger.html#"><i data-feather="plus"></i></a>
+                  </form>
+                 <!--  <a class="icon-btn btn-primary btn-fix chat-cont-toggle outside mainnav" href="messenger.html#"><i data-feather="plus"></i></a>    -->
+                 <a class="icon-btn btn-primary btn-fix outside mainnav"><i data-feather="plus"></i></a>
                 </div>
               </div>
-            </div>
-            <div class="theme-tab tab-sm chat-tabs">     
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" data-to="chat-content"><a class="nav-link button-effect active" id="chat-tab" data-toggle="tab" href="messenger.html#chat" role="tab" aria-controls="chat" aria-selected="true" data-intro="Start chat"><i data-feather="message-square"> </i>Chat</a></li>
-                <li class="nav-item" data-to="call-content"><a class="nav-link button-effect" id="call-tab" data-toggle="tab" href="messenger.html#call" role="tab" aria-controls="call" aria-selected="false"><i data-feather="phone"> </i>Call</a></li>
-                <li class="nav-item" data-to="contact-content"><a class="nav-link button-effect" id="contact-tab" data-toggle="tab" href="messenger.html#contact" role="tab" aria-controls="contact" aria-selected="false"> <i data-feather="users"> </i>Contact</a></li>
-              </ul>
               <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="chat" role="tabpanel" aria-labelledby="chat-tab"> 
                   <div class="theme-tab">       
-                    <ul class="nav nav-tabs" id="myTab1" role="tablist">
+                    <!-- <ul class="nav nav-tabs" id="myTab1" role="tablist">
                       <li class="nav-item"><a class="nav-link button-effect active" id="direct-tab" data-toggle="tab" href="messenger.html#direct" role="tab" aria-controls="direct" aria-selected="false" data-to="chating">Direct</a></li>
                       <li class="nav-item"><a class="nav-link button-effect" id="group-tab" data-toggle="tab" href="messenger.html#group" role="tab" aria-controls="group" aria-selected="true" data-to="group_chat">Group</a></li>
-                    </ul>
+                    </ul> -->
                     <div class="tab-content" id="myTabContent1">
                       <div class="tab-pane fade show active" id="direct" role="tabpanel" aria-labelledby="direct-tab"> 
                         <ul class="chat-main">
@@ -1934,7 +1944,7 @@
               <ul class="chatappend">
                 <li class="groupuser">
                   <h4>Jewellery project</h4>
-                  <div class="gr-chat-friend-toggle"><a class="icon-btn btn-sm pull-right add-grbtn outside" href="messenger.html#" data-tippy-content="Add User"><i data-feather="plus"></i></a>
+                  <div class="gr-chat-friend-toggle"><a class="icon-btn btn-sm pull-right add-grbtn outside" href="" data-tippy-content="Add User"><i data-feather="plus"></i></a>
                     <div class="gr-chat-frind-content">
                       <ul class="chat-main">
                         <li>
