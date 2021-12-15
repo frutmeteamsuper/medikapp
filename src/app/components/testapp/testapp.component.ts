@@ -27,7 +27,8 @@ setLocation(){
        this.online = false;
 }
 
-  ngOnInit() {
+
+ngOnInit() {
     this._uw.tixPreview.quantity=1;
  if (this._uw.loaded==true){
           this.loadAPI = new Promise(resolve => {

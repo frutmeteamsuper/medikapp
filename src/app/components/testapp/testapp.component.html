@@ -35,7 +35,7 @@
             <div class="theme-title">
               <div class="media">
                 <div> 
-                  <h2><span style="font-weight: 100;">Medik</span>Chat</h2>
+                  <h2>MedikChat</h2>
                   <!-- <h4>Directorio médico </h4> -->
                 </div>
 
@@ -49,8 +49,8 @@
               </div>
               <div class="media">
                 <div> 
-                  <h2>Ejido, Mérida Venezuela</h2>
-                  <h4>Localiza los especialistas mas cercanos a tí</h4>
+                  <h2>Ejido, Mérida Vzla</h2>
+                  <!-- <h4>Localiza los especialistas mas cercanos a tí</h4> -->
                 </div>
                 <div class="media-body text-right">   
                   <a class="icon-btn btn-outline-light btn-sm search contact-search" > <i data-feather="search"></i></a>
@@ -64,6 +64,14 @@
                  <a class="icon-btn btn-primary btn-fix outside mainnav"><i data-feather="plus"></i></a>
                 </div>
               </div>
+                <div class="theme-tab tab-sm chat-tabs">     
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" data-to="chat-content"><a (click)="setOnline()" class="nav-link button-effect active" id="chat-tab" data-toggle="tab" href="messenger.html#chat" role="tab" aria-controls="chat" aria-selected="true" data-intro="Start chat"><i data-feather="message-square"></i>En linea </a></li>
+                <li (click)="setLocation()" class="nav-item" data-to="call-content"><a class="nav-link button-effect" id="call-tab" data-toggle="tab" href="messenger.html#call" role="tab" aria-controls="call" aria-selected="false"><i data-feather="map-pin"> </i>Ubicación</a></li>
+                <!-- <li class="nav-item" data-to="contact-content"><a class="nav-link button-effect" id="contact-tab" data-toggle="tab" href="messenger.html#contact" role="tab" aria-controls="contact" aria-selected="false"> <i data-feather="users"> </i>Contact</a></li> -->
+              </ul>
+               
+            </div>
             </div>
             <div class="recent-slider recent-chat owl-carousel owl-theme">
               <div class="item">
@@ -91,14 +99,7 @@
                 </div>
               </div>
             </div>
-             <div class="theme-tab tab-sm chat-tabs">     
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" data-to="chat-content"><a (click)="setOnline()" class="nav-link button-effect active" id="chat-tab" data-toggle="tab" href="messenger.html#chat" role="tab" aria-controls="chat" aria-selected="true" data-intro="Start chat"><i data-feather="message-square"></i>En linea </a></li>
-                <li (click)="setLocation()" class="nav-item" data-to="call-content"><a class="nav-link button-effect" id="call-tab" data-toggle="tab" href="messenger.html#call" role="tab" aria-controls="call" aria-selected="false"><i data-feather="map-pin"> </i>Ubicación</a></li>
-                <!-- <li class="nav-item" data-to="contact-content"><a class="nav-link button-effect" id="contact-tab" data-toggle="tab" href="messenger.html#contact" role="tab" aria-controls="contact" aria-selected="false"> <i data-feather="users"> </i>Contact</a></li> -->
-              </ul>
-               
-            </div>
+           
           </div>
           <div class="chat custom-scroll">
             <ul class="chat-cont-setting">
