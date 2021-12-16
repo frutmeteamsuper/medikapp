@@ -8,7 +8,7 @@
          </a> -->
          <div class="chitchat-container sidebar-toggle">
       <nav class="main-nav on custom-scroll">
-        <div class="logo-warpper"><a href="messenger.html"><img src="assets/assetsmedik/images/logo/logo.png" alt="logo"/></a></div>
+        <div class="logo-warpper"><a ><img src="assets/assetsmedik/images/logo/logo.png" alt="logo"/></a></div>
         <div class="sidebar-main">
           <ul class="sidebar-top">
             <li><a class="button-effect" href="status" data-tippy-content="status" data-intro="Check Status here">
@@ -24,7 +24,7 @@
             <li><a class="icon-btn btn-light button-effect" href="settings" data-tippy-content="Setting" data-intro="You can change settings by clicking here"> <i class="fa fa-cog"></i></a></li>
           </ul>
           <ul class="sidebar-bottom">         
-            <li><a class="icon-btn btn-light button-effect mode" href="messenger.html#" data-tippy-content="Theme Mode" data-intro="Change mode"><i class="fa fa-moon-o"></i></a></li>
+            <li><a class="icon-btn btn-light button-effect mode"  data-tippy-content="Theme Mode" data-intro="Change mode"><i class="fa fa-moon-o"></i></a></li>
             <li><a class="icon-btn btn-light" href="login.html" data-tippy-content=" SignOut"> <i class="fa fa-power-off">  </i></a></li>
           </ul>
         </div>
@@ -61,7 +61,7 @@
                       <div class="icon-close close-search">                 </div>
                     </div>
                   </form>
-                 <!--  <a class="icon-btn btn-primary btn-fix chat-cont-toggle outside mainnav" href="messenger.html#"><i data-feather="plus"></i></a>    -->
+                 <!--  <a class="icon-btn btn-primary btn-fix chat-cont-toggle outside mainnav" ><i data-feather="plus"></i></a>    -->
                  <a class="icon-btn btn-primary btn-fix outside mainnav"><i data-feather="plus"></i></a>
                 </div>
               </div>
@@ -92,12 +92,20 @@
                   </div>
                 </div>
               </div>
+              <div class="item">
+                <div class="recent-box">
+                  <div class="dot-btn  grow"></div>
+                  <div style="border-radius: 20px;height: 85px;width: 100%;"><img class="bg-img" src="assets/assetsmedik/images/specs/pediatria.png" alt="Pediatria"/>
+                   
+                  </div>
+                </div>
+              </div>
             </div>
              <div class="theme-title">
            <div class="theme-tab tab-sm chat-tabs">     
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" data-to="chat-content"><a (click)="setOnline()" class="nav-link button-effect active" id="chat-tab" data-toggle="tab" href="messenger.html#chat" role="tab" aria-controls="chat" aria-selected="true" data-intro="Start chat"><i data-feather="message-square"></i>Listado </a></li>
-                <li (click)="setLocation()" class="nav-item" data-to="call-content"><a class="nav-link button-effect" id="call-tab" data-toggle="tab" href="messenger.html#call" role="tab" aria-controls="call" aria-selected="false"><i data-feather="map-pin"> </i>Mapa</a></li>
+                <li (click)="setLocation()" class="nav-item" data-to="call-content"><a class="nav-link button-effect" id="call-tab" data-toggle="tab" href="messenger.html#contact" role="tab" aria-controls="call" aria-selected="false"><i data-feather="map-pin"> </i>Mapa</a></li>
                 <!-- <li class="nav-item" data-to="contact-content"><a class="nav-link button-effect" id="contact-tab" data-toggle="tab" href="messenger.html#contact" role="tab" aria-controls="contact" aria-selected="false"> <i data-feather="users"> </i>Contact</a></li> -->
               </ul>
                
@@ -105,11 +113,11 @@
           </div>
           <div class="chat custom-scroll">
             <ul class="chat-cont-setting">
-              <li> <a href="messenger.html#" data-toggle="modal" data-target="#msgchatModal"><span>new chat</span>
+              <li> <a  data-toggle="modal" data-target="#msgchatModal"><span>new chat</span>
                   <div class="icon-btn btn-outline-primary button-effect btn-sm"><i data-feather="message-square"></i></div></a></li>
-              <li><a href="messenger.html#" data-toggle="modal" data-target="#msgcallModal"><span>new call</span>
+              <li><a  data-toggle="modal" data-target="#msgcallModal"><span>new call</span>
                   <div class="icon-btn btn-outline-success button-effect btn-sm"><i data-feather="phone"></i></div></a></li>
-              <li><a href="messenger.html#" data-toggle="modal" data-target="#exampleModalCenter"><span>new Contact</span>
+              <li><a  data-toggle="modal" data-target="#exampleModalCenter"><span>new Contact</span>
                   <div class="icon-btn btn-outline-danger button-effect btn-sm"><i data-feather="users"></i></div></a></li>
             </ul>
             <div class="theme-title">
@@ -226,9 +234,9 @@
                               </div>
                               <div class="date-status">
                                 <ul class="grop-icon">
-                                  <li><a class="group-tp" href="messenger.html#" data-tippy-content="Josephin"> <img src="assets/assetsmedik/images/contact/1.jpg" alt="group-icon-img"/></a></li>
-                                  <li><a class="group-tp" href="messenger.html#" data-tippy-content="Jony "> <img src="assets/assetsmedik/images/contact/2.jpg" alt="group-icon-img"/></a></li>
-                                  <li><a class="group-tp" href="messenger.html#" data-tippy-content="Pabelo"> <img src="assets/assetsmedik/images/contact/3.jpg" alt="group-icon-img"/></a></li>
+                                  <li><a class="group-tp"  data-tippy-content="Josephin"> <img src="assets/assetsmedik/images/contact/1.jpg" alt="group-icon-img"/></a></li>
+                                  <li><a class="group-tp"  data-tippy-content="Jony "> <img src="assets/assetsmedik/images/contact/2.jpg" alt="group-icon-img"/></a></li>
+                                  <li><a class="group-tp"  data-tippy-content="Pabelo"> <img src="assets/assetsmedik/images/contact/3.jpg" alt="group-icon-img"/></a></li>
                                   <li>+ 35</li>
                                 </ul>
                               </div>
@@ -243,9 +251,9 @@
                               </div>
                               <div class="date-status">
                                 <ul class="grop-icon">
-                                  <li><a class="group-tp" href="messenger.html#" data-tippy-content="Josephin"> <img src="assets/assetsmedik/images/contact/1.jpg" alt="group-icon-img"/></a></li>
-                                  <li><a class="group-tp" href="messenger.html#" data-tippy-content="Jony "> <img src="assets/assetsmedik/images/contact/2.jpg" alt="group-icon-img"/></a></li>
-                                  <li><a class="group-tp" href="messenger.html#" data-tippy-content="Pabelo"> <img src="assets/assetsmedik/images/contact/3.jpg" alt="group-icon-img"/></a></li>
+                                  <li><a class="group-tp"  data-tippy-content="Josephin"> <img src="assets/assetsmedik/images/contact/1.jpg" alt="group-icon-img"/></a></li>
+                                  <li><a class="group-tp"  data-tippy-content="Jony "> <img src="assets/assetsmedik/images/contact/2.jpg" alt="group-icon-img"/></a></li>
+                                  <li><a class="group-tp"  data-tippy-content="Pabelo"> <img src="assets/assetsmedik/images/contact/3.jpg" alt="group-icon-img"/></a></li>
                                   <li>+ 12</li>
                                 </ul>
                                 <div class="badge badge-primary"></div>
@@ -657,13 +665,13 @@
                 <h2>Favourite</h2>
                 <h4>Last Recent</h4>
               </div>
-              <div class="media-body text-right">  <a class="icon-btn btn-outline-light btn-sm m-r-15 search" href="messenger.html#"> <i data-feather="search"></i></a>
+              <div class="media-body text-right">  <a class="icon-btn btn-outline-light btn-sm m-r-15 search" > <i data-feather="search"></i></a>
                 <form class="form-inline search-form">
                   <div class="form-group">
                     <input class="form-control-plaintext" type="search" placeholder="Search.."/>
                     <div class="icon-close close-search"></div>
                   </div>
-                </form><a class="icon-btn btn-outline-light btn-sm m-r-15" href="messenger.html#" data-toggle="modal" data-target="#addcallmodal"><i data-feather="plus">                              </i></a><a class="icon-btn btn-outline-light btn-sm close-panel" href="messenger.html#"><i data-feather="x"></i></a>
+                </form><a class="icon-btn btn-outline-light btn-sm m-r-15"  data-toggle="modal" data-target="#addcallmodal"><i data-feather="plus">                              </i></a><a class="icon-btn btn-outline-light btn-sm close-panel" ><i data-feather="x"></i></a>
               </div>
             </div>
           </div>
@@ -676,7 +684,7 @@
                     <h5>Josephin water</h5>
                     <h6>Alabma , USA</h6>
                   </div>
-                  <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm pull-right favourite" href="messenger.html#"> <i data-feather="star"> </i></a></div>
+                  <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm pull-right favourite" > <i data-feather="star"> </i></a></div>
                 </div>
               </div>
             </li>
@@ -688,7 +696,7 @@
                     <h5>Jony Lynetin</h5>
                     <h6>Los Angeles, California</h6>
                   </div>
-                  <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm pull-right favourite" href="messenger.html#"> <i data-feather="star"> </i></a></div>
+                  <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm pull-right favourite" > <i data-feather="star"> </i></a></div>
                 </div>
               </div>
             </li>
@@ -700,7 +708,7 @@
                     <h5>Sufiya Elija</h5>
                     <h6>Glasgow , Scotland</h6>
                   </div>
-                  <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm pull-right favourite" href="messenger.html#"> <i data-feather="star"> </i></a></div>
+                  <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm pull-right favourite" > <i data-feather="star"> </i></a></div>
                 </div>
               </div>
             </li>
@@ -712,7 +720,7 @@
                     <h5>Pabelo Mukrani</h5>
                     <h6>Leicester , England</h6>
                   </div>
-                  <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm pull-right favourite" href="messenger.html#"> <i data-feather="star"> </i></a></div>
+                  <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm pull-right favourite" > <i data-feather="star"> </i></a></div>
                 </div>
               </div>
             </li>
@@ -724,7 +732,7 @@
                     <h5>Josephin water</h5>
                     <h6>Alabma , USA</h6>
                   </div>
-                  <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm pull-right favourite" href="messenger.html#"> <i data-feather="star"> </i></a></div>
+                  <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm pull-right favourite" > <i data-feather="star"> </i></a></div>
                 </div>
               </div>
             </li>
@@ -736,7 +744,7 @@
                     <h5>Josephin water</h5>
                     <h6>Alabma , USA</h6>
                   </div>
-                  <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm pull-right favourite" href="messenger.html#"> <i data-feather="star"> </i></a></div>
+                  <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm pull-right favourite" > <i data-feather="star"> </i></a></div>
                 </div>
               </div>
             </li>
@@ -749,13 +757,13 @@
                 <h2>Document</h2>
                 <h4>List of document</h4>
               </div>
-              <div class="media-body text-right">   <a class="icon-btn btn-outline-light btn-sm m-r-15 search" href="messenger.html#"> <i data-feather="search"></i></a>
+              <div class="media-body text-right">   <a class="icon-btn btn-outline-light btn-sm m-r-15 search" > <i data-feather="search"></i></a>
                 <form class="form-inline search-form">
                   <div class="form-group">
                     <input class="form-control-plaintext" type="search" placeholder="Search.."/>
                     <div class="icon-close close-search">                               </div>
                   </div>
-                </form><a class="icon-btn btn-outline-light btn-sm close-panel" href="messenger.html#"><i data-feather="x"></i></a>
+                </form><a class="icon-btn btn-outline-light btn-sm close-panel" ><i data-feather="x"></i></a>
               </div>
             </div>
           </div>
@@ -763,19 +771,19 @@
             <li>
               <div class="chat-box">
                 <div class="media">
-                  <div class="profile"><a class="icon-btn btn-outline-danger btn-xl pull-right rouded15" href="messenger.html#"><i class="fa fa-file-code-o"></i></a></div>
+                  <div class="profile"><a class="icon-btn btn-outline-danger btn-xl pull-right rouded15" ><i class="fa fa-file-code-o"></i></a></div>
                   <div class="details">
                     <h5>messenger.html</h5>
                     <h6>2, octomber 2019</h6>
                   </div>
-                  <div class="media-body"><a class="icon-btn btn-outline-light btn-sm pull-right" href="https://themes.pixelstrap.com/chitchat/assets/doc/messenger.html" target="_blank"><i data-feather="download"></i></a></div>
+                  <div class="media-body"><a class="icon-btn btn-outline-light btn-sm pull-right"  target="_blank"><i data-feather="download"></i></a></div>
                 </div>
               </div>
             </li>
             <li>
               <div class="chat-box">
                 <div class="media">
-                  <div class="profile"><a class="icon-btn btn-outline-success btn-xl pull-right rouded15" href="messenger.html#"><i class="fa fa-file-video-o"></i></a></div>
+                  <div class="profile"><a class="icon-btn btn-outline-success btn-xl pull-right rouded15" ><i class="fa fa-file-video-o"></i></a></div>
                   <div class="details">
                     <h5>chapter1.MP4</h5>
                     <h6>3, Octomber 2019</h6>
@@ -787,7 +795,7 @@
             <li>
               <div class="chat-box">
                 <div class="media">
-                  <div class="profile"><a class="icon-btn btn-outline-primary btn-xl pull-right rouded15" href="messenger.html#"><i class="fa fa-file-word-o"></i></a></div>
+                  <div class="profile"><a class="icon-btn btn-outline-primary btn-xl pull-right rouded15" ><i class="fa fa-file-word-o"></i></a></div>
                   <div class="details">
                     <h5>salary.xlsx</h5>
                     <h6>5, Octomber 2019</h6>
@@ -799,7 +807,7 @@
             <li>
               <div class="chat-box">
                 <div class="media">
-                  <div class="profile"><a class="icon-btn btn-outline-warning btn-xl pull-right rouded15" href="messenger.html#"><i class="fa fa-file-pdf-o"></i></a></div>
+                  <div class="profile"><a class="icon-btn btn-outline-warning btn-xl pull-right rouded15" ><i class="fa fa-file-pdf-o"></i></a></div>
                   <div class="details">
                     <h5>document.pdf</h5>
                     <h6>7, Octomber 2019</h6>
@@ -811,7 +819,7 @@
             <li>
               <div class="chat-box">
                 <div class="media">
-                  <div class="profile"><a class="icon-btn btn-outline-danger btn-xl pull-right rouded15" href="messenger.html#"><i class="fa fa-file-text-o"></i></a></div>
+                  <div class="profile"><a class="icon-btn btn-outline-danger btn-xl pull-right rouded15" ><i class="fa fa-file-text-o"></i></a></div>
                   <div class="details">
                     <h5>details.txt</h5>
                     <h6>20, Octomber 2019</h6>
@@ -823,12 +831,12 @@
             <li>
               <div class="chat-box">
                 <div class="media">
-                  <div class="profile"><a class="icon-btn btn-outline-success btn-xl pull-right rouded15" href="messenger.html#"><i class="fa fa-file-code-o"></i></a></div>
+                  <div class="profile"><a class="icon-btn btn-outline-success btn-xl pull-right rouded15" ><i class="fa fa-file-code-o"></i></a></div>
                   <div class="details">
                     <h5>messenger.html</h5>
                     <h6>2, octomber 2019</h6>
                   </div>
-                  <div class="media-body"><a class="icon-btn btn-outline-light btn-sm pull-right" href="https://themes.pixelstrap.com/chitchat/assets/doc/messenger.html" target="_blank"><i data-feather="download"></i></a></div>
+                  <div class="media-body"><a class="icon-btn btn-outline-light btn-sm pull-right"  target="_blank"><i data-feather="download"></i></a></div>
                 </div>
               </div>
             </li>
@@ -841,13 +849,13 @@
                 <h2>Contact</h2>
                 <h4>Start talking now</h4>
               </div>
-              <div class="media-body text-right">   <a class="icon-btn btn-outline-light btn-sm m-r-15 search" href="messenger.html#"> <i data-feather="search"></i></a>
+              <div class="media-body text-right">   <a class="icon-btn btn-outline-light btn-sm m-r-15 search" > <i data-feather="search"></i></a>
                 <form class="form-inline search-form">
                   <div class="form-group">
                     <input class="form-control-plaintext" type="search" placeholder="Search.."/>
                     <div class="icon-close close-search">                               </div>
                   </div>
-                </form><a class="icon-btn btn-outline-light btn-sm close-panel" href="messenger.html#"><i data-feather="x"></i></a>
+                </form><a class="icon-btn btn-outline-light btn-sm close-panel" ><i data-feather="x"></i></a>
               </div>
             </div>
           </div>
@@ -1069,7 +1077,7 @@
                 <h2>Notification</h2>
                 <h4>List of notification</h4>
               </div>
-              <div class="media-body text-right">   <a class="icon-btn btn-outline-light btn-sm close-panel" href="messenger.html#"><i data-feather="x"></i></a></div>
+              <div class="media-body text-right">   <a class="icon-btn btn-outline-light btn-sm close-panel" ><i data-feather="x"></i></a></div>
             </div>
           </div>
           <ul class="chat-main">
@@ -1142,7 +1150,7 @@
                 <h2>Settings</h2>
                 <h4>Change your app setting.</h4>
               </div>
-              <div class="media-body text-right">   <a class="icon-btn btn-outline-light btn-sm close-panel" href="messenger.html#"><i data-feather="x"></i></a></div>
+              <div class="media-body text-right">   <a class="icon-btn btn-outline-light btn-sm close-panel" ><i data-feather="x"></i></a></div>
             </div>
             <div class="profile-box">
               <div class="media">
@@ -1161,7 +1169,7 @@
                     </div>
                   </form>
                 </div>
-                <div class="media-body"><a class="icon-btn btn-outline-light btn-sm pull-right edit-btn" href="messenger.html#"> <i data-feather="edit">       </i></a></div>
+                <div class="media-body"><a class="icon-btn btn-outline-light btn-sm pull-right edit-btn" > <i data-feather="edit">       </i></a></div>
               </div>
             </div>
           </div>
@@ -1171,7 +1179,7 @@
                 <div class="media-body">
                   <h3>Account</h3>
                 </div>
-                <div class="media-right"><a class="icon-btn btn-outline-light btn-sm pull-right previous" href="messenger.html#"> <i data-feather="chevron-left">                </i></a></div>
+                <div class="media-right"><a class="icon-btn btn-outline-light btn-sm pull-right previous" > <i data-feather="chevron-left">                </i></a></div>
               </div>
               <div class="theme-according" id="accordion">
                 <div class="card">
@@ -1266,14 +1274,14 @@
                         <input class="form-control country-code" type="number" placeholder="01"/>
                         <input class="form-control" type="number" placeholder=""/>
                       </div>
-                      <div class="text-right">  <a class="btn btn-outline-primary button-effect btn-sm" href="messenger.html#">confirm</a></div>
+                      <div class="text-right">  <a class="btn btn-outline-primary button-effect btn-sm" >confirm</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="card">
                   <div class="card-header" id="headingFive" role="heading" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><a>Request account info<i class="fa fa-angle-down"></i></a></div>
                   <div class="collapse" id="collapseFive" aria-labelledby="headingFive" data-parent="#accordion">
-                    <div class="card-body"><a class="p-0 req-info" id="demo" href="messenger.html#" onclick="document.getElementById(&quot;demo&quot;).innerHTML = &quot;Request sent&quot;">Request Info                            </a>
+                    <div class="card-body"><a class="p-0 req-info" id="demo"  onclick="document.getElementById(&quot;demo&quot;).innerHTML = &quot;Request sent&quot;">Request Info                            </a>
                       <p> <b>Note : </b>Create a report of your account information and settings, which you can access ot port to another app.</p>
                     </div>
                   </div>
@@ -1281,7 +1289,7 @@
                 <div class="card">
                   <div class="card-header" id="headingSix" role="heading" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><a>Delete My account<i class="fa fa-angle-down"></i></a></div>
                   <div class="collapse" id="collapseSix" aria-labelledby="headingSix" data-parent="#accordion">
-                    <div class="card-body"><a class="p-0 req-info font-danger" href="messenger.html#">Delete Account                            </a>
+                    <div class="card-body"><a class="p-0 req-info font-danger" >Delete Account                            </a>
                       <p> <b>Note :</b>Deleting your account will delete your account info, profile photo, all groups & chat history.</p>
                     </div>
                   </div>
@@ -1293,7 +1301,7 @@
                 <h3>Account</h3>
                 <h4>Update Your Account Details</h4>
               </div>
-              <div class="media-right"> <a class="icon-btn btn-outline-light btn-sm pull-right next" href="messenger.html#"> <i data-feather="chevron-right">       </i></a></div>
+              <div class="media-right"> <a class="icon-btn btn-outline-light btn-sm pull-right next" > <i data-feather="chevron-right">       </i></a></div>
             </div>
           </div>
           <div class="setting-block">
@@ -1302,7 +1310,7 @@
                 <div class="media-body">
                   <h3>Chat</h3>
                 </div>
-                <div class="media-right"><a class="icon-btn btn-outline-light btn-sm pull-right previous" href="messenger.html#"> <i data-feather="chevron-left"> </i></a></div>
+                <div class="media-right"><a class="icon-btn btn-outline-light btn-sm pull-right previous" > <i data-feather="chevron-left"> </i></a></div>
               </div>
               <ul class="help">
                 <li>
@@ -1334,13 +1342,13 @@
                   </ul>
                 </li>
                 <li>
-                  <h5> <a href="messenger.html#">Archive all chat</a></h5>
+                  <h5> <a >Archive all chat</a></h5>
                 </li>
                 <li>
-                  <h5> <a href="messenger.html#"> Clear all chats</a></h5>
+                  <h5> <a > Clear all chats</a></h5>
                 </li>
                 <li>
-                  <h5> <a class="font-danger" href="messenger.html#">Delete all chats</a></h5>
+                  <h5> <a class="font-danger" >Delete all chats</a></h5>
                 </li>
               </ul>
             </div>
@@ -1349,7 +1357,7 @@
                 <h3>Chat</h3>
                 <h4>Control Your Chat Backup</h4>
               </div>
-              <div class="media-right"> <a class="icon-btn btn-outline-light btn-sm pull-right next" href="messenger.html#"> <i data-feather="chevron-right">     </i></a></div>
+              <div class="media-right"> <a class="icon-btn btn-outline-light btn-sm pull-right next" > <i data-feather="chevron-right">     </i></a></div>
             </div>
           </div>
           <div class="setting-block">
@@ -1358,7 +1366,7 @@
                 <div class="media-body">
                   <h3>Integratin</h3>
                 </div>
-                <div class="media-right"> <a class="icon-btn btn-outline-light btn-sm pull-right previous" href="messenger.html#"> <i data-feather="chevron-left"> </i></a></div>
+                <div class="media-right"> <a class="icon-btn btn-outline-light btn-sm pull-right previous" > <i data-feather="chevron-left"> </i></a></div>
               </div>
               <ul class="integratin">
                 <li>
@@ -1399,7 +1407,7 @@
                 </li>
                 <li>
                   <div class="media">
-                    <div class="media-left"> <a class="slc" href="messenger.html#"><i class="fa fa-slack"></i>
+                    <div class="media-left"> <a class="slc" ><i class="fa fa-slack"></i>
                         <h5>Slack   </h5></a></div>
                     <div class="media-right">
                       <div class="profile"><a href="https://slack.com/get-started#/" target="_blank"><i data-feather="plus-circle"></i></a></div>
@@ -1413,7 +1421,7 @@
                 <h3>Integratin</h3>
                 <h4>Sync Your Other Social Account</h4>
               </div>
-              <div class="media-right"> <a class="icon-btn btn-outline-light btn-sm pull-right next" href="messenger.html#"> <i data-feather="chevron-right">       </i></a></div>
+              <div class="media-right"> <a class="icon-btn btn-outline-light btn-sm pull-right next" > <i data-feather="chevron-right">       </i></a></div>
             </div>
           </div>
           <div class="setting-block">
@@ -1422,23 +1430,23 @@
                 <div class="media-body">
                   <h3>Help</h3>
                 </div>
-                <div class="media-right"> <a class="icon-btn btn-outline-light btn-sm pull-right previous" href="messenger.html#"> <i data-feather="chevron-left"> </i></a></div>
+                <div class="media-right"> <a class="icon-btn btn-outline-light btn-sm pull-right previous" > <i data-feather="chevron-left"> </i></a></div>
               </div>
               <ul class="help">
                 <li>
-                  <h5> <a href="messenger.html#">FAQ</a></h5>
+                  <h5> <a >FAQ</a></h5>
                 </li>
                 <li>
-                  <h5> <a href="messenger.html#"> Contact Us</a></h5>
+                  <h5> <a > Contact Us</a></h5>
                 </li>
                 <li>
-                  <h5> <a href="messenger.html#">Terms and Privacy Policy</a></h5>
+                  <h5> <a >Terms and Privacy Policy</a></h5>
                 </li>
                 <li>
-                  <h5> <a href="messenger.html#">Licenses</a></h5>
+                  <h5> <a >Licenses</a></h5>
                 </li>
                 <li> 
-                  <h5> <a href="messenger.html#">2019 - 20 Powered by Pixelstrap</a></h5>
+                  <h5> <a >2019 - 20 Powered by Pixelstrap</a></h5>
                 </li>
               </ul>
             </div>
@@ -1447,7 +1455,7 @@
                 <h3>Help</h3>
                 <h4>You are Confusion, Tell me</h4>
               </div>
-              <div class="media-right"> <a class="icon-btn btn-outline-light btn-sm pull-right next" href="messenger.html#"> <i data-feather="chevron-right"></i></a></div>
+              <div class="media-right"> <a class="icon-btn btn-outline-light btn-sm pull-right next" > <i data-feather="chevron-right"></i></a></div>
             </div>
           </div>
         </div>
@@ -1465,7 +1473,7 @@
                   <h3>my status</h3>
                   <p>tap to add status Update</p>
                 </div>
-                <div><a class="icon-btn btn-outline-light btn-sm close-panel" href="messenger.html#"><i data-feather="x"></i></a></div>
+                <div><a class="icon-btn btn-outline-light btn-sm close-panel" ><i data-feather="x"></i></a></div>
               </div>
             </div>
           </div>
@@ -1476,7 +1484,7 @@
             <div class="status-content">
               <ul>
                 <li class="user-status"><a class="lightbox img-status status" href="messenger.html#statusbox"><img class="img-fluid bg-img" src="assets/assetsmedik/images/status-img/small/sm-1.jpg" alt="status"/></a>
-                  <div class="lightbox-target" id="statusbox"><img src="assets/assetsmedik/images/status-img/large/lg-1.jpg" alt="status"/><a class="lightbox-close" href="messenger.html#"></a></div>
+                  <div class="lightbox-target" id="statusbox"><img src="assets/assetsmedik/images/status-img/large/lg-1.jpg" alt="status"/><a class="lightbox-close" ></a></div>
                 </li>
                 <li>
                   <h5>Josephin water</h5>
@@ -1487,7 +1495,7 @@
             <div class="status-content">
               <ul>
                 <li class="user-status"><a class="lightbox img-status status" href="messenger.html#statusbox2"><img class="img-fluid bg-img" src="assets/assetsmedik/images/status-img/small/sm-2.jpg" alt="status"/></a>
-                  <div class="lightbox-target" id="statusbox2"><img src="assets/assetsmedik/images/status-img/large/lg-2.jpg" alt="status"/><a class="lightbox-close" href="messenger.html#"></a></div>
+                  <div class="lightbox-target" id="statusbox2"><img src="assets/assetsmedik/images/status-img/large/lg-2.jpg" alt="status"/><a class="lightbox-close" ></a></div>
                 </li>
                 <li>
                   <h5>Jony Lynetin</h5>
@@ -1498,7 +1506,7 @@
             <div class="status-content">
               <ul>
                 <li class="user-status"><a class="lightbox img-status status" href="messenger.html#statusbox3"><img class="img-fluid bg-img" src="assets/assetsmedik/images/status-img/small/sm-3.jpg" alt="status"/></a>
-                  <div class="lightbox-target" id="statusbox3"><img src="assets/assetsmedik/images/status-img/large/lg-3.jpg" alt="status"/><a class="lightbox-close" href="messenger.html#"></a></div>
+                  <div class="lightbox-target" id="statusbox3"><img src="assets/assetsmedik/images/status-img/large/lg-3.jpg" alt="status"/><a class="lightbox-close" ></a></div>
                 </li>
                 <li>
                   <h5>Sufiya Elija</h5>
@@ -1509,7 +1517,7 @@
             <div class="status-content">
               <ul>
                 <li class="user-status"><a class="lightbox img-status status" href="messenger.html#statusbox4"><img class="img-fluid bg-img" src="assets/assetsmedik/images/status-img/small/sm-4.jpg" alt="status"/></a>
-                  <div class="lightbox-target" id="statusbox4"><img src="assets/assetsmedik/images/status-img/large/lg-4.jpg" alt="status"/><a class="lightbox-close" href="messenger.html#"></a></div>
+                  <div class="lightbox-target" id="statusbox4"><img src="assets/assetsmedik/images/status-img/large/lg-4.jpg" alt="status"/><a class="lightbox-close" ></a></div>
                 </li>
                 <li>
                   <h5>Mukrani Pabelo </h5>
@@ -1520,7 +1528,7 @@
             <div class="status-content">
               <ul>
                 <li class="user-status"><a class="lightbox img-status status" href="messenger.html#statusbox5"><img class="img-fluid bg-img" src="assets/assetsmedik/images/status-img/small/sm-5.jpg" alt="status"/></a>
-                  <div class="lightbox-target" id="statusbox5"><img src="assets/assetsmedik/images/status-img/large/lg-5.jpg" alt="status"/><a class="lightbox-close" href="messenger.html#"></a></div>
+                  <div class="lightbox-target" id="statusbox5"><img src="assets/assetsmedik/images/status-img/large/lg-5.jpg" alt="status"/><a class="lightbox-close" ></a></div>
                 </li>
                 <li>
                   <h5>Pabelo Mukrani</h5>
@@ -1531,7 +1539,7 @@
             <div class="status-content">
               <ul>
                 <li class="user-status"><a class="lightbox img-status status" href="messenger.html#statusbox6"><img class="img-fluid bg-img" src="assets/assetsmedik/images/status-img/small/sm-3.jpg" alt="status"/></a>
-                  <div class="lightbox-target" id="statusbox6"><img src="assets/assetsmedik/images/status-img/large/lg-3.jpg" alt="status"/><a class="lightbox-close" href="messenger.html#"></a></div>
+                  <div class="lightbox-target" id="statusbox6"><img src="assets/assetsmedik/images/status-img/large/lg-3.jpg" alt="status"/><a class="lightbox-close" ></a></div>
                 </li>
                 <li>
                   <h5>Sufiya Elija</h5>
@@ -1564,8 +1572,8 @@
                     </div>
                     <div class="media-right">
                       <ul>
-                        <li><a class="icon-btn btn-light button-effect mute" href="messenger.html#"><i class="fa fa-volume-up"></i></a></li>
-                        <li><a class="icon-btn btn-light search-right" href="messenger.html#"><i data-feather="search"></i></a></li>
+                        <li><a class="icon-btn btn-light button-effect mute" ><i class="fa fa-volume-up"></i></a></li>
+                        <li><a class="icon-btn btn-light search-right" ><i data-feather="search"></i></a></li>
                        
                       </ul>
                     </div>
@@ -1573,23 +1581,23 @@
                 </div>
                 <div class="col">
                   <ul class="calls text-right">
-                     <li><a class="icon-btn btn-light button-effect mobile-sidebar" href="messenger.html#"><i data-feather="chevron-left"></i></a></li>
-                    <li><a class="icon-btn btn-light button-effect" href="messenger.html#" data-tippy-content="Quick Audio Call" data-toggle="modal" data-target="#audiocall"><i data-feather="phone"></i></a></li>
-                    <li><a class="icon-btn btn-light button-effect" href="messenger.html#" data-tippy-content="Quick Video Call" data-toggle="modal" data-target="#videocall"><i data-feather="video"></i></a></li>
-                    <li><a class="icon-btn btn-light button-effect apps-toggle" href="messenger.html#" data-tippy-content="All Apps"><i class="ti-layout-grid2"></i></a></li>
-                    <li class="chat-friend-toggle"><a class="icon-btn btn-light bg-transparent button-effect outside" href="messenger.html#" data-tippy-content="Quick action"><i data-feather="more-vertical"></i></a>
+                     <li><a class="icon-btn btn-light button-effect mobile-sidebar" ><i data-feather="chevron-left"></i></a></li>
+                    <li><a class="icon-btn btn-light button-effect"  data-tippy-content="Quick Audio Call" data-toggle="modal" data-target="#audiocall"><i data-feather="phone"></i></a></li>
+                    <li><a class="icon-btn btn-light button-effect"  data-tippy-content="Quick Video Call" data-toggle="modal" data-target="#videocall"><i data-feather="video"></i></a></li>
+                    <li><a class="icon-btn btn-light button-effect apps-toggle"  data-tippy-content="All Apps"><i class="ti-layout-grid2"></i></a></li>
+                    <li class="chat-friend-toggle"><a class="icon-btn btn-light bg-transparent button-effect outside"  data-tippy-content="Quick action"><i data-feather="more-vertical"></i></a>
                       <div class="chat-frind-content">
                         <ul>
                           <li><a class="icon-btn btn-outline-primary button-effect btn-sm" href="#slide-menu"><i data-feather="user"></i></a>
                             <h5>Profile</h5>
                           </li>
-                          <li><a class="icon-btn btn-outline-success button-effect btn-sm" href="messenger.html#"><i data-feather="plus-circle"></i></a>
+                          <li><a class="icon-btn btn-outline-success button-effect btn-sm" ><i data-feather="plus-circle"></i></a>
                             <h5>Archive</h5>
                           </li>
-                          <li><a class="icon-btn btn-outline-danger button-effect btn-sm" href="messenger.html#"><i data-feather="trash-2"></i></a>
+                          <li><a class="icon-btn btn-outline-danger button-effect btn-sm" ><i data-feather="trash-2"></i></a>
                             <h5>Delete</h5>
                           </li>
-                          <li><a class="icon-btn btn-outline-light button-effect btn-sm" href="messenger.html#"><i data-feather="slash"></i></a>
+                          <li><a class="icon-btn btn-outline-light button-effect btn-sm" ><i data-feather="slash"></i></a>
                             <h5>Block</h5>
                           </li>
                         </ul>
@@ -1614,10 +1622,10 @@
                               <div class="msg-setting"><i class="ti-more-alt"></i></div>
                               <div class="msg-dropdown"> 
                                 <ul>
-                                  <li><a href="messenger.html#"><i class="fa fa-share"></i>forward</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-clone"></i>copy</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-star-o"></i>rating</a></li>
-                                  <li><a href="messenger.html#"><i class="ti-trash"></i>delete</a></li>
+                                  <li><a ><i class="fa fa-share"></i>forward</a></li>
+                                  <li><a ><i class="fa fa-clone"></i>copy</a></li>
+                                  <li><a ><i class="fa fa-star-o"></i>rating</a></li>
+                                  <li><a ><i class="ti-trash"></i>delete</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -1630,10 +1638,10 @@
                               <div class="msg-setting"><i class="ti-more-alt"></i></div>
                               <div class="msg-dropdown"> 
                                 <ul>
-                                  <li><a href="messenger.html#"><i class="fa fa-share"></i>forward</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-clone"></i>copy</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-star-o"></i>rating</a></li>
-                                  <li><a href="messenger.html#"><i class="ti-trash"></i>delete</a></li>
+                                  <li><a ><i class="fa fa-share"></i>forward</a></li>
+                                  <li><a ><i class="fa fa-clone"></i>copy</a></li>
+                                  <li><a ><i class="fa fa-star-o"></i>rating</a></li>
+                                  <li><a ><i class="ti-trash"></i>delete</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -1657,10 +1665,10 @@
                               <div class="msg-setting"><i class="ti-more-alt"></i></div>
                               <div class="msg-dropdown"> 
                                 <ul>
-                                  <li><a href="messenger.html#"><i class="fa fa-share"></i>forward</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-clone"></i>copy</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-star-o"></i>rating</a></li>
-                                  <li><a href="messenger.html#"><i class="ti-trash"></i>delete</a></li>
+                                  <li><a ><i class="fa fa-share"></i>forward</a></li>
+                                  <li><a ><i class="fa fa-clone"></i>copy</a></li>
+                                  <li><a ><i class="fa fa-star-o"></i>rating</a></li>
+                                  <li><a ><i class="ti-trash"></i>delete</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -1672,10 +1680,10 @@
                               <div class="msg-setting"><i class="ti-more-alt"></i></div>
                               <div class="msg-dropdown"> 
                                 <ul>
-                                  <li><a href="messenger.html#"><i class="fa fa-share"></i>forward</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-clone"></i>copy</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-star-o"></i>rating</a></li>
-                                  <li><a href="messenger.html#"><i class="ti-trash"></i>delete</a></li>
+                                  <li><a ><i class="fa fa-share"></i>forward</a></li>
+                                  <li><a ><i class="fa fa-clone"></i>copy</a></li>
+                                  <li><a ><i class="fa fa-star-o"></i>rating</a></li>
+                                  <li><a ><i class="ti-trash"></i>delete</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -1698,10 +1706,10 @@
                               <div class="msg-setting"><i class="ti-more-alt"></i></div>
                               <div class="msg-dropdown"> 
                                 <ul>
-                                  <li><a href="messenger.html#"><i class="fa fa-share"></i>forward</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-clone"></i>copy</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-star-o"></i>rating</a></li>
-                                  <li><a href="messenger.html#"><i class="ti-trash"></i>delete</a></li>
+                                  <li><a ><i class="fa fa-share"></i>forward</a></li>
+                                  <li><a ><i class="fa fa-clone"></i>copy</a></li>
+                                  <li><a ><i class="fa fa-star-o"></i>rating</a></li>
+                                  <li><a ><i class="ti-trash"></i>delete</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -1720,10 +1728,10 @@
                               <div class="msg-setting"><i class="ti-more-alt"></i></div>
                               <div class="msg-dropdown"> 
                                 <ul>
-                                  <li><a href="messenger.html#"><i class="fa fa-share"></i>forward</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-clone"></i>copy</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-star-o"></i>rating</a></li>
-                                  <li><a href="messenger.html#"><i class="ti-trash"></i>delete</a></li>
+                                  <li><a ><i class="fa fa-share"></i>forward</a></li>
+                                  <li><a ><i class="fa fa-clone"></i>copy</a></li>
+                                  <li><a ><i class="fa fa-star-o"></i>rating</a></li>
+                                  <li><a ><i class="ti-trash"></i>delete</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -1747,10 +1755,10 @@
                               <div class="msg-setting"><i class="ti-more-alt"></i></div>
                               <div class="msg-dropdown"> 
                                 <ul>
-                                  <li><a href="messenger.html#"><i class="fa fa-share"></i>forward</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-clone"></i>copy</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-star-o"></i>rating</a></li>
-                                  <li><a href="messenger.html#"><i class="ti-trash"></i>delete</a></li>
+                                  <li><a ><i class="fa fa-share"></i>forward</a></li>
+                                  <li><a ><i class="fa fa-clone"></i>copy</a></li>
+                                  <li><a ><i class="fa fa-star-o"></i>rating</a></li>
+                                  <li><a ><i class="ti-trash"></i>delete</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -1769,10 +1777,10 @@
                               <div class="msg-setting"><i class="ti-more-alt"></i></div>
                               <div class="msg-dropdown"> 
                                 <ul>
-                                  <li><a href="messenger.html#"><i class="fa fa-share"></i>forward</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-clone"></i>copy</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-star-o"></i>rating</a></li>
-                                  <li><a href="messenger.html#"><i class="ti-trash"></i>delete</a></li>
+                                  <li><a ><i class="fa fa-share"></i>forward</a></li>
+                                  <li><a ><i class="fa fa-clone"></i>copy</a></li>
+                                  <li><a ><i class="fa fa-star-o"></i>rating</a></li>
+                                  <li><a ><i class="ti-trash"></i>delete</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -1796,10 +1804,10 @@
                               <div class="msg-setting"><i class="ti-more-alt"></i></div>
                               <div class="msg-dropdown"> 
                                 <ul>
-                                  <li><a href="messenger.html#"><i class="fa fa-share"></i>forward</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-clone"></i>copy</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-star-o"></i>rating</a></li>
-                                  <li><a href="messenger.html#"><i class="ti-trash"></i>delete                  </a></li>
+                                  <li><a ><i class="fa fa-share"></i>forward</a></li>
+                                  <li><a ><i class="fa fa-clone"></i>copy</a></li>
+                                  <li><a ><i class="fa fa-star-o"></i>rating</a></li>
+                                  <li><a ><i class="ti-trash"></i>delete                  </a></li>
                                 </ul>
                               </div>
                             </div>
@@ -1826,8 +1834,8 @@
                     </div>
                     <div class="media-right">
                       <ul>
-                        <li><a class="icon-btn btn-light button-effect mute" href="messenger.html#"><i class="fa fa-volume-up"></i></a></li>
-                        <li><a class="icon-btn btn-light search search-right" href="messenger.html#"> <i data-feather="search"></i></a>
+                        <li><a class="icon-btn btn-light button-effect mute" ><i class="fa fa-volume-up"></i></a></li>
+                        <li><a class="icon-btn btn-light search search-right" > <i data-feather="search"></i></a>
                           <form class="form-inline search-form">
                             <div class="form-group">
                               <input class="form-control-plaintext" type="search" placeholder="Search.."/>
@@ -1835,29 +1843,29 @@
                             </div>
                           </form>
                         </li>
-                        <li><a class="icon-btn btn-light button-effect mobile-sidebar" href="messenger.html#"><i data-feather="chevron-left"></i></a></li>
+                        <li><a class="icon-btn btn-light button-effect mobile-sidebar" ><i data-feather="chevron-left"></i></a></li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div class="col"> 
                   <ul class="calls text-right">
-                    <li><a class="icon-btn btn-light button-effect" href="messenger.html#" data-tippy-content="Quick Audio Call" data-toggle="modal" data-target="#audiocall"><i data-feather="phone"></i></a></li>
-                    <li><a class="icon-btn btn-light button-effect" href="messenger.html#" data-tippy-content="Quick Video Call" data-toggle="modal" data-target="#videocall"><i data-feather="video"></i></a></li>
-                    <li><a class="icon-btn btn-light button-effect apps-toggle" href="messenger.html#" data-tippy-content="All Apps"><i class="ti-layout-grid2"></i></a></li>
-                    <li class="chat-friend-toggle"><a class="icon-btn btn-light bg-transparent button-effect outside" href="messenger.html#" data-tippy-content="Quick action"><i data-feather="more-vertical"></i></a>
+                    <li><a class="icon-btn btn-light button-effect"  data-tippy-content="Quick Audio Call" data-toggle="modal" data-target="#audiocall"><i data-feather="phone"></i></a></li>
+                    <li><a class="icon-btn btn-light button-effect"  data-tippy-content="Quick Video Call" data-toggle="modal" data-target="#videocall"><i data-feather="video"></i></a></li>
+                    <li><a class="icon-btn btn-light button-effect apps-toggle"  data-tippy-content="All Apps"><i class="ti-layout-grid2"></i></a></li>
+                    <li class="chat-friend-toggle"><a class="icon-btn btn-light bg-transparent button-effect outside"  data-tippy-content="Quick action"><i data-feather="more-vertical"></i></a>
                       <div class="chat-frind-content">
                         <ul>
-                          <li><a class="icon-btn btn-outline-primary button-effect btn-sm" href="messenger.html#"><i data-feather="user"></i></a>
+                          <li><a class="icon-btn btn-outline-primary button-effect btn-sm" ><i data-feather="user"></i></a>
                             <h5>profile</h5>
                           </li>
-                          <li><a class="icon-btn btn-outline-success button-effect btn-sm" href="messenger.html#"><i data-feather="plus-circle"></i></a>
+                          <li><a class="icon-btn btn-outline-success button-effect btn-sm" ><i data-feather="plus-circle"></i></a>
                             <h5>archive</h5>
                           </li>
-                          <li><a class="icon-btn btn-outline-danger button-effect btn-sm" href="messenger.html#"><i data-feather="trash-2"></i></a>
+                          <li><a class="icon-btn btn-outline-danger button-effect btn-sm" ><i data-feather="trash-2"></i></a>
                             <h5>delete</h5>
                           </li>
-                          <li><a class="icon-btn btn-outline-light button-effect btn-sm" href="messenger.html#"><i data-feather="slash"></i></a>
+                          <li><a class="icon-btn btn-outline-light button-effect btn-sm" ><i data-feather="slash"></i></a>
                             <h5>block</h5>
                           </li>
                         </ul>
@@ -1908,8 +1916,8 @@
                     </div>
                     <div class="media-right">
                       <ul>
-                        <li><a class="icon-btn btn-light button-effect mute" href="messenger.html#"><i class="fa fa-volume-up"></i></a></li>
-                        <li><a class="icon-btn btn-light search search-right" href="messenger.html#"> <i data-feather="search"></i></a>
+                        <li><a class="icon-btn btn-light button-effect mute" ><i class="fa fa-volume-up"></i></a></li>
+                        <li><a class="icon-btn btn-light search search-right" > <i data-feather="search"></i></a>
                           <form class="form-inline search-form">
                             <div class="form-group">
                               <input class="form-control-plaintext" type="search" placeholder="Search.."/>
@@ -1917,29 +1925,29 @@
                             </div>
                           </form>
                         </li>
-                        <li><a class="icon-btn btn-light button-effect mobile-sidebar" href="messenger.html#"><i data-feather="chevron-left"></i></a></li>
+                        <li><a class="icon-btn btn-light button-effect mobile-sidebar" ><i data-feather="chevron-left"></i></a></li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div class="col"> 
                   <ul class="calls text-right">
-                    <li><a class="icon-btn btn-light button-effect" href="messenger.html#" data-tippy-content="Start Audio Conference" data-toggle="modal" data-target="#confercall"><i data-feather="phone"></i></a></li>
-                    <li><a class="icon-btn btn-light button-effect" href="messenger.html#" data-tippy-content="Start Video Conference" data-toggle="modal" data-target="#confvideocl"><i data-feather="video"></i></a></li>
-                    <li><a class="icon-btn btn-light button-effect apps-toggle" href="messenger.html#" data-tippy-content="All Apps"><i class="ti-layout-grid2"></i></a></li>
-                    <li class="chat-friend-toggle"><a class="icon-btn btn-light bg-transparent button-effect outside" href="messenger.html#" data-tippy-content="Quick action"></a>
+                    <li><a class="icon-btn btn-light button-effect"  data-tippy-content="Start Audio Conference" data-toggle="modal" data-target="#confercall"><i data-feather="phone"></i></a></li>
+                    <li><a class="icon-btn btn-light button-effect"  data-tippy-content="Start Video Conference" data-toggle="modal" data-target="#confvideocl"><i data-feather="video"></i></a></li>
+                    <li><a class="icon-btn btn-light button-effect apps-toggle"  data-tippy-content="All Apps"><i class="ti-layout-grid2"></i></a></li>
+                    <li class="chat-friend-toggle"><a class="icon-btn btn-light bg-transparent button-effect outside"  data-tippy-content="Quick action"></a>
                       <div class="chat-frind-content">
                         <ul>
-                          <li><a class="icon-btn btn-outline-primary button-effect btn-sm" href="messenger.html#"><i data-feather="user"></i></a>
+                          <li><a class="icon-btn btn-outline-primary button-effect btn-sm" ><i data-feather="user"></i></a>
                             <h5>profile</h5>
                           </li>
-                          <li><a class="icon-btn btn-outline-success button-effect btn-sm" href="messenger.html#"><i data-feather="plus-circle"></i></a>
+                          <li><a class="icon-btn btn-outline-success button-effect btn-sm" ><i data-feather="plus-circle"></i></a>
                             <h5>archive</h5>
                           </li>
-                          <li><a class="icon-btn btn-outline-danger button-effect btn-sm" href="messenger.html#"><i data-feather="trash-2"></i></a>
+                          <li><a class="icon-btn btn-outline-danger button-effect btn-sm" ><i data-feather="trash-2"></i></a>
                             <h5>delete</h5>
                           </li>
-                          <li><a class="icon-btn btn-outline-light button-effect btn-sm" href="messenger.html#"><i data-feather="slash"></i></a>
+                          <li><a class="icon-btn btn-outline-light button-effect btn-sm" ><i data-feather="slash"></i></a>
                             <h5>block</h5>
                           </li>
                         </ul>
@@ -1964,7 +1972,7 @@
                                 <h5>Josephin water</h5>
                                 <h6>Alabma , USA</h6>
                               </div>
-                              <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm" href="messenger.html#" data-tippy-content="Add User"><i class="fa fa-plus"></i></a></div>
+                              <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm"  data-tippy-content="Add User"><i class="fa fa-plus"></i></a></div>
                             </div>
                           </div>
                         </li>
@@ -1976,7 +1984,7 @@
                                 <h5>Josephin water</h5>
                                 <h6>Alabma , USA</h6>
                               </div>
-                              <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm" href="messenger.html#" data-tippy-content="Add User"><i class="fa fa-plus"></i></a></div>
+                              <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm"  data-tippy-content="Add User"><i class="fa fa-plus"></i></a></div>
                             </div>
                           </div>
                         </li>
@@ -1988,7 +1996,7 @@
                                 <h5>Josephin water</h5>
                                 <h6>Alabma , USA</h6>
                               </div>
-                              <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm" href="messenger.html#" data-tippy-content="Add User"><i class="fa fa-plus"></i></a></div>
+                              <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm"  data-tippy-content="Add User"><i class="fa fa-plus"></i></a></div>
                             </div>
                           </div>
                         </li>
@@ -2000,7 +2008,7 @@
                                 <h5>Josephin water</h5>
                                 <h6>Alabma , USA</h6>
                               </div>
-                              <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm" href="messenger.html#" data-tippy-content="Add User"><i class="fa fa-plus"></i></a></div>
+                              <div class="media-body"><a class="icon-btn btn-outline-primary btn-sm"  data-tippy-content="Add User"><i class="fa fa-plus"></i></a></div>
                             </div>
                           </div>
                         </li>
@@ -2024,10 +2032,10 @@
                               <div class="msg-setting"><i class="ti-more-alt"></i></div>
                               <div class="msg-dropdown"> 
                                 <ul>
-                                  <li><a href="messenger.html#"><i class="fa fa-share"></i>forward</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-clone"></i>copy</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-star-o"></i>rating</a></li>
-                                  <li><a href="messenger.html#"><i class="ti-trash"></i>delete</a></li>
+                                  <li><a ><i class="fa fa-share"></i>forward</a></li>
+                                  <li><a ><i class="fa fa-clone"></i>copy</a></li>
+                                  <li><a ><i class="fa fa-star-o"></i>rating</a></li>
+                                  <li><a ><i class="ti-trash"></i>delete</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -2039,10 +2047,10 @@
                               <div class="msg-setting"><i class="ti-more-alt"></i></div>
                               <div class="msg-dropdown"> 
                                 <ul>
-                                  <li><a href="messenger.html#"><i class="fa fa-share"></i>forward</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-clone"></i>copy</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-star-o"></i>rating</a></li>
-                                  <li><a href="messenger.html#"><i class="ti-trash"></i>delete</a></li>
+                                  <li><a ><i class="fa fa-share"></i>forward</a></li>
+                                  <li><a ><i class="fa fa-clone"></i>copy</a></li>
+                                  <li><a ><i class="fa fa-star-o"></i>rating</a></li>
+                                  <li><a ><i class="ti-trash"></i>delete</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -2065,10 +2073,10 @@
                               <div class="msg-setting"><i class="ti-more-alt"></i></div>
                               <div class="msg-dropdown"> 
                                 <ul>
-                                  <li><a href="messenger.html#"><i class="fa fa-share"></i>forward</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-clone"></i>copy</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-star-o"></i>rating</a></li>
-                                  <li><a href="messenger.html#"><i class="ti-trash"></i>delete</a></li>
+                                  <li><a ><i class="fa fa-share"></i>forward</a></li>
+                                  <li><a ><i class="fa fa-clone"></i>copy</a></li>
+                                  <li><a ><i class="fa fa-star-o"></i>rating</a></li>
+                                  <li><a ><i class="ti-trash"></i>delete</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -2079,10 +2087,10 @@
                               <div class="msg-setting"><i class="ti-more-alt"></i></div>
                               <div class="msg-dropdown"> 
                                 <ul>
-                                  <li><a href="messenger.html#"><i class="fa fa-share"></i>forward</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-clone"></i>copy</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-star-o"></i>rating</a></li>
-                                  <li><a href="messenger.html#"><i class="ti-trash"></i>delete</a></li>
+                                  <li><a ><i class="fa fa-share"></i>forward</a></li>
+                                  <li><a ><i class="fa fa-clone"></i>copy</a></li>
+                                  <li><a ><i class="fa fa-star-o"></i>rating</a></li>
+                                  <li><a ><i class="ti-trash"></i>delete</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -2114,10 +2122,10 @@
                               <div class="msg-setting"><i class="ti-more-alt"></i></div>
                               <div class="msg-dropdown"> 
                                 <ul>
-                                  <li><a href="messenger.html#"><i class="fa fa-share"></i>forward</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-clone"></i>copy</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-star-o"></i>rating</a></li>
-                                  <li><a href="messenger.html#"><i class="ti-trash"></i>delete</a></li>
+                                  <li><a ><i class="fa fa-share"></i>forward</a></li>
+                                  <li><a ><i class="fa fa-clone"></i>copy</a></li>
+                                  <li><a ><i class="fa fa-star-o"></i>rating</a></li>
+                                  <li><a ><i class="ti-trash"></i>delete</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -2134,10 +2142,10 @@
                               <div class="msg-setting"><i class="ti-more-alt"></i></div>
                               <div class="msg-dropdown"> 
                                 <ul>
-                                  <li><a href="messenger.html#"><i class="fa fa-share"></i>forward</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-clone"></i>copy</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-star-o"></i>rating</a></li>
-                                  <li><a href="messenger.html#"><i class="ti-trash"></i>delete</a></li>
+                                  <li><a ><i class="fa fa-share"></i>forward</a></li>
+                                  <li><a ><i class="fa fa-clone"></i>copy</a></li>
+                                  <li><a ><i class="fa fa-star-o"></i>rating</a></li>
+                                  <li><a ><i class="ti-trash"></i>delete</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -2160,10 +2168,10 @@
                               <div class="msg-setting"><i class="ti-more-alt"></i></div>
                               <div class="msg-dropdown"> 
                                 <ul>
-                                  <li><a href="messenger.html#"><i class="fa fa-share"></i>forward</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-clone"></i>copy</a></li>
-                                  <li><a href="messenger.html#"><i class="fa fa-star-o"></i>rating</a></li>
-                                  <li><a href="messenger.html#"><i class="ti-trash"></i>delete</a></li>
+                                  <li><a ><i class="fa fa-share"></i>forward</a></li>
+                                  <li><a ><i class="fa fa-clone"></i>copy</a></li>
+                                  <li><a ><i class="fa fa-star-o"></i>rating</a></li>
+                                  <li><a ><i class="ti-trash"></i>delete</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -2191,8 +2199,8 @@
                     </div>
                     <div class="media-right">
                       <ul>
-                        <li><a class="icon-btn btn-light button-effect mute" href="messenger.html#"><i class="fa fa-volume-up"></i></a></li>
-                        <li><a class="icon-btn btn-light search search-right" href="messenger.html#"> <i data-feather="search"></i></a>
+                        <li><a class="icon-btn btn-light button-effect mute" ><i class="fa fa-volume-up"></i></a></li>
+                        <li><a class="icon-btn btn-light search search-right" > <i data-feather="search"></i></a>
                           <form class="form-inline search-form">
                             <div class="form-group">
                               <input class="form-control-plaintext" type="search" placeholder="Search.."/>
@@ -2200,29 +2208,29 @@
                             </div>
                           </form>
                         </li>
-                        <li><a class="icon-btn btn-light button-effect mobile-sidebar" href="messenger.html#"><i data-feather="chevron-left"></i></a></li>
+                        <li><a class="icon-btn btn-light button-effect mobile-sidebar" ><i data-feather="chevron-left"></i></a></li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div class="col"> 
                   <ul class="calls text-right">
-                    <li><a class="icon-btn btn-light button-effect" href="messenger.html#" data-tippy-content="Quick Audio Call" data-toggle="modal" data-target="#confercall"><i data-feather="phone"></i></a></li>
-                    <li><a class="icon-btn btn-light button-effect" href="messenger.html#" data-tippy-content="Quick Video Call" data-toggle="modal" data-target="#confvideocl"><i data-feather="video"></i></a></li>
-                    <li><a class="icon-btn btn-light button-effect apps-toggle" href="messenger.html#" data-tippy-content="All Apps"><i class="ti-layout-grid2"></i></a></li>
-                    <li class="chat-friend-toggle"><a class="icon-btn btn-light bg-transparent button-effect outside" href="messenger.html#" data-tippy-content="Quick action"><i data-feather="more-vertical"></i></a>
+                    <li><a class="icon-btn btn-light button-effect"  data-tippy-content="Quick Audio Call" data-toggle="modal" data-target="#confercall"><i data-feather="phone"></i></a></li>
+                    <li><a class="icon-btn btn-light button-effect"  data-tippy-content="Quick Video Call" data-toggle="modal" data-target="#confvideocl"><i data-feather="video"></i></a></li>
+                    <li><a class="icon-btn btn-light button-effect apps-toggle"  data-tippy-content="All Apps"><i class="ti-layout-grid2"></i></a></li>
+                    <li class="chat-friend-toggle"><a class="icon-btn btn-light bg-transparent button-effect outside"  data-tippy-content="Quick action"><i data-feather="more-vertical"></i></a>
                       <div class="chat-frind-content">
                         <ul>
-                          <li><a class="icon-btn btn-outline-primary button-effect btn-sm" href="messenger.html#"><i data-feather="user"></i></a>
+                          <li><a class="icon-btn btn-outline-primary button-effect btn-sm" ><i data-feather="user"></i></a>
                             <h5>profile</h5>
                           </li>
-                          <li><a class="icon-btn btn-outline-success button-effect btn-sm" href="messenger.html#"><i data-feather="plus-circle"></i></a>
+                          <li><a class="icon-btn btn-outline-success button-effect btn-sm" ><i data-feather="plus-circle"></i></a>
                             <h5>archive</h5>
                           </li>
-                          <li><a class="icon-btn btn-outline-danger button-effect btn-sm" href="messenger.html#"><i data-feather="trash-2"></i></a>
+                          <li><a class="icon-btn btn-outline-danger button-effect btn-sm" ><i data-feather="trash-2"></i></a>
                             <h5>delete</h5>
                           </li>
-                          <li><a class="icon-btn btn-outline-light button-effect btn-sm" href="messenger.html#"><i data-feather="slash"></i></a>
+                          <li><a class="icon-btn btn-outline-light button-effect btn-sm" ><i data-feather="slash"></i></a>
                             <h5>block</h5>
                           </li>
                         </ul>
@@ -2260,7 +2268,7 @@
             </div>
           </div>
           <div class="message-input">
-            <div class="wrap emojis-main"><a class="icon-btn btn-outline-primary button-effect mr-3 toggle-sticker outside" href="messenger.html#">
+            <div class="wrap emojis-main"><a class="icon-btn btn-outline-primary button-effect mr-3 toggle-sticker outside" >
                 <svg id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="2158px" height="2148px" viewbox="0 0 2158 2148" enable-background="new 0 0 2158 2148" xml:space="preserve">
                   <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="60" stroke-miterlimit="10" d="M699,693                        c0,175.649,0,351.351,0,527c36.996,0,74.004,0,111,0c18.058,0,40.812-2.485,57,1c11.332,0.333,22.668,0.667,34,1                        c7.664,2.148,20.769,14.091,25,20c8.857,12.368,6,41.794,6,62c0,49.329,0,98.672,0,148c175.649,0,351.351,0,527,0                        c0-252.975,0-506.025,0-759C1205.692,693,952.308,693,699,693z"></path>
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M886,799c59.172-0.765,93.431,25.289,111,66c6.416,14.867,14.612,39.858,9,63                        c-2.391,9.857-5.076,20.138-9,29c-15.794,35.671-47.129,53.674-90,63c-20.979,4.563-42.463-4.543-55-10                        c-42.773-18.617-85.652-77.246-59-141c10.637-25.445,31.024-49,56-60c7.999-2.667,16.001-5.333,24-8                        C877.255,799.833,882.716,801.036,886,799z"></path>
@@ -2268,22 +2276,22 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1345,1184c-0.723,18.71-11.658,29.82-20,41c-18.271,24.489-50.129,37.183-83,47                        c-7.333,1-14.667,2-22,3c-12.013,2.798-33.636,5.15-44,3c-11.332-0.333-22.668-0.667-34-1c-15.332-3-30.668-6-46-9                        c-44.066-14.426-80.944-31.937-110-61c-22.348-22.353-38.992-45.628-37-90c0.667,0,1.333,0,2,0c9.163,5.585,24.723,3.168,36,6                        c26.211,6.583,54.736,7.174,82,14c34.068,8.53,71.961,10.531,106,19c9.999,1.333,20.001,2.667,30,4c26.193,6.703,54.673,7.211,82,14                        C1304.894,1178.445,1325.573,1182.959,1345,1184z"></path>
                   <polygon fill-rule="evenodd" clip-rule="evenodd" points="668.333,1248.667 901.667,1482 941.667,1432 922.498,1237.846                         687,1210.667 "></polygon>
                 </svg></a>
-              <div class="dot-btn dot-primary mr-3"><a class="icon-btn btn-outline-primary button-effect toggle-emoji" href="messenger.html#"><i data-feather="smile"></i></a></div>
-              <div class="contact-poll"><a class="icon-btn btn-outline-primary mr-4 outside" href="messenger.html#"><i class="fa fa-plus"></i></a>
+              <div class="dot-btn dot-primary mr-3"><a class="icon-btn btn-outline-primary button-effect toggle-emoji" ><i data-feather="smile"></i></a></div>
+              <div class="contact-poll"><a class="icon-btn btn-outline-primary mr-4 outside" ><i class="fa fa-plus"></i></a>
                 <div class="contact-poll-content">
                   <ul>
-                    <li><a href="messenger.html#"><i data-feather="image"></i>gallery</a></li>
-                    <li><a href="messenger.html#"><i data-feather="camera"></i>camera</a></li>
+                    <li><a ><i data-feather="image"></i>gallery</a></li>
+                    <li><a ><i data-feather="camera"></i>camera</a></li>
                     <li><a data-toggle="modal" data-target="#snippetModal"><i data-feather="code">                       </i>Code Snippest</a></li>
-                    <li><a href="messenger.html#"><i data-feather="user">                              </i>contact</a></li>
-                    <li><a href="messenger.html#"><i data-feather="map-pin">                       </i>location</a></li>
-                    <li><a href="messenger.html#"><i data-feather="clipboard"> </i>document</a></li>
+                    <li><a ><i data-feather="user">                              </i>contact</a></li>
+                    <li><a ><i data-feather="map-pin">                       </i>location</a></li>
+                    <li><a ><i data-feather="clipboard"> </i>document</a></li>
                     <li><a data-toggle="modal" data-target="#pollModal"><i data-feather="bar-chart-2">                       </i>poll</a></li>
-                    <li><a href="messenger.html#"><i data-feather="paperclip">                       </i>attach</a></li>
+                    <li><a ><i data-feather="paperclip">                       </i>attach</a></li>
                   </ul>
                 </div>
               </div>
-              <input class="setemoj" id="setemoj" type="text" placeholder="Write your message..."/><a class="icon-btn btn-outline-primary button-effect mr-3 ml-3" href="messenger.html#"><i data-feather="mic">                </i></a>
+              <input class="setemoj" id="setemoj" type="text" placeholder="Write your message..."/><a class="icon-btn btn-outline-primary button-effect mr-3 ml-3" ><i data-feather="mic">                </i></a>
               <button class="submit icon-btn btn-primary disabled" id="send-msg" disabled="disabled"><i data-feather="send">               </i></button>
               <div class="emojis-contain">
                 <div class="emojis-sub-contain custom-scroll">
@@ -2357,57 +2365,57 @@
               <div class="sticker-contain">
                 <div class="sticker-sub-contain custom-scroll">
                   <ul>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/1.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/2.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/3.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/3.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/4.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/5.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/6.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/7.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/8.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/9.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/10.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/11.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/12.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/13.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/14.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/15.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/16.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/17.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/18.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/19.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/20.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/21.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/22.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/23.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/24.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/25.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/26.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/27.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/28.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/29.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/30.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/31.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/32.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/33.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/34.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/35.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/36.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/37.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/38.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/39.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/40.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/41.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/42.gif" alt="sticker"/></a></li>
-                    <li><a href="messenger.html#"><img class="img-fluid" src="assets/assetsmedik/images/sticker/43.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/1.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/2.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/3.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/3.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/4.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/5.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/6.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/7.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/8.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/9.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/10.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/11.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/12.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/13.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/14.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/15.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/16.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/17.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/18.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/19.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/20.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/21.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/22.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/23.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/24.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/25.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/26.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/27.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/28.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/29.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/30.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/31.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/32.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/33.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/34.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/35.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/36.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/37.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/38.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/39.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/40.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/41.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/42.gif" alt="sticker"/></a></li>
+                    <li><a ><img class="img-fluid" src="assets/assetsmedik/images/sticker/43.gif" alt="sticker"/></a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="call-content tabto"><a class="icon-btn btn-outline-primary button-effect mobile-back mb-3" href="messenger.html#"><i class="ti-angle-left">                       </i></a>
+        <div class="call-content tabto"><a class="icon-btn btn-outline-primary button-effect mobile-back mb-3" ><i class="ti-angle-left">                       </i></a>
           <div class="row">
             <div class="col-sm-5">
               <div class="user-profile mb-3">
@@ -2550,7 +2558,7 @@
           </div>
         </div>
         <div class="contact-content tabto">
-          <div class="contact-sub-content"><a class="icon-btn btn-outline-primary button-effect mobile-back mb-3" href="messenger.html#"><i class="ti-angle-left"></i></a>
+          <div class="contact-sub-content"><a class="icon-btn btn-outline-primary button-effect mobile-back mb-3" ><i class="ti-angle-left"></i></a>
             <div class="row">
               <div class="col-sm-5">
                 <div class="user-profile">
@@ -2657,7 +2665,7 @@
                   <h2>Profile</h2>
                   <h4>Personal Information</h4>
                 </div>
-                <div class="media-body text-right">   <a class="icon-btn btn-outline-light btn-sm close-profile ml-3" href="messenger.html#"> <i data-feather="x"> </i></a></div>
+                <div class="media-body text-right">   <a class="icon-btn btn-outline-light btn-sm close-profile ml-3" > <i data-feather="x"> </i></a></div>
               </div>
             </div>
             <div class="details">
@@ -2667,9 +2675,9 @@
                 <h6>Add Description</h6>
               </div>
               <ul class="medialogo">
-                <li><a class="icon-btn btn-danger button-effect" href="messenger.html#"><i class="fa fa-google"></i></a></li>
-                <li><a class="icon-btn btn-primary button-effect" href="messenger.html#"><i class="fa fa-twitter"></i></a></li>
-                <li><a class="icon-btn btn-facebook button-effect" href="messenger.html#"><i class="fa fa-facebook-f"></i></a></li>
+                <li><a class="icon-btn btn-danger button-effect" ><i class="fa fa-google"></i></a></li>
+                <li><a class="icon-btn btn-primary button-effect" ><i class="fa fa-twitter"></i></a></li>
+                <li><a class="icon-btn btn-facebook button-effect" ><i class="fa fa-facebook-f"></i></a></li>
               </ul>
             </div>
           </div>
@@ -2850,13 +2858,13 @@
             <h5 class="block-title p-b-25">Contact info</h5>
             <ul>
               <li>
-                <h5> <a href="messenger.html#"> <i data-feather="smartphone"></i>+12 3456789587</a></h5>
+                <h5> <a > <i data-feather="smartphone"></i>+12 3456789587</a></h5>
               </li>
               <li>
                 <h5><a href="https://themeforest.net/user/pixelstrap/portfolio"> <i data-feather="crosshair"></i>https://pixelstrap</a></h5>
               </li>
               <li>
-                <h5><a href="messenger.html#"> <i data-feather="map-pin"></i>1766  Fidler Drive Texas, 78238.</a></h5>
+                <h5><a > <i data-feather="map-pin"></i>1766  Fidler Drive Texas, 78238.</a></h5>
               </li>
             </ul>
           </div>
@@ -2879,16 +2887,16 @@
           <div class="status other">
             <ul>
               <li>
-                <h5> <a href="messenger.html#"> <i data-feather="share-2"></i>share Contact</a></h5>
+                <h5> <a > <i data-feather="share-2"></i>share Contact</a></h5>
               </li>
               <li>
-                <h5><a href="messenger.html#"> <i data-feather="trash-2"></i>Clear Chat</a></h5>
+                <h5><a > <i data-feather="trash-2"></i>Clear Chat</a></h5>
               </li>
               <li>
-                <h5><a href="messenger.html#"> <i data-feather="external-link"></i>Export Chat</a></h5>
+                <h5><a > <i data-feather="external-link"></i>Export Chat</a></h5>
               </li>
               <li>
-                <h5><a href="messenger.html#"> <i data-feather="alert-circle"></i>Report Contact             </a></h5>
+                <h5><a > <i data-feather="alert-circle"></i>Report Contact             </a></h5>
               </li>
             </ul>
           </div>
@@ -2905,7 +2913,7 @@
                       <h2>Todo</h2>
                       <h4>to create your task</h4>
                     </div>
-                    <div class="media-body media-body text-right"><a class="icon-btn btn-sm btn-outline-light close-apps" href="messenger.html#"><i data-feather="x"></i></a></div>
+                    <div class="media-body media-body text-right"><a class="icon-btn btn-sm btn-outline-light close-apps" ><i data-feather="x"></i></a></div>
                   </div>
                 </div>
                 <div class="todo-name">
@@ -2945,10 +2953,10 @@
                                     <div class="fa fa-user"></div>
                                     <h5 class="text-muted">Assign To</h5>
                                   </li>
-                                  <li><a href="messenger.html#">Josephin john</a></li>
-                                  <li><a href="messenger.html#">Lynetin john</a></li>
-                                  <li><a href="messenger.html#">Sufiya john</a></li>
-                                  <li><a href="messenger.html#">Jhon john</a></li>
+                                  <li><a >Josephin john</a></li>
+                                  <li><a >Lynetin john</a></li>
+                                  <li><a >Sufiya john</a></li>
+                                  <li><a >Jhon john</a></li>
                                 </ul>
                               </div>
                               <input class="datepicker-here form-control digits" type="url" data-language="en" placeholder="Due date"/>
@@ -2971,10 +2979,10 @@
                                     <div class="fa fa-user"></div>
                                     <h5 class="text-muted">Assign To</h5>
                                   </li>
-                                  <li><a href="messenger.html#">Josephin john</a></li>
-                                  <li><a href="messenger.html#">Lynetin john</a></li>
-                                  <li><a href="messenger.html#">Sufiya john</a></li>
-                                  <li><a href="messenger.html#">Jhon john</a></li>
+                                  <li><a >Josephin john</a></li>
+                                  <li><a >Lynetin john</a></li>
+                                  <li><a >Sufiya john</a></li>
+                                  <li><a >Jhon john</a></li>
                                 </ul>
                               </div>
                               <input class="datepicker-here form-control digits" type="url" data-language="en" placeholder="Due date"/>
@@ -2997,10 +3005,10 @@
                                     <div class="fa fa-user"></div>
                                     <h5 class="text-muted">Assign To</h5>
                                   </li>
-                                  <li><a href="messenger.html#">Josephin john</a></li>
-                                  <li><a href="messenger.html#">Lynetin john</a></li>
-                                  <li><a href="messenger.html#">Sufiya john</a></li>
-                                  <li><a href="messenger.html#">Jhon john</a></li>
+                                  <li><a >Josephin john</a></li>
+                                  <li><a >Lynetin john</a></li>
+                                  <li><a >Sufiya john</a></li>
+                                  <li><a >Jhon john</a></li>
                                 </ul>
                               </div>
                               <input class="datepicker-here form-control digits" type="url" data-language="en" placeholder="Due date"/>
@@ -3028,7 +3036,7 @@
                     <h2>Files</h2>
                     <h4>Shared Media</h4>
                   </div>
-                  <div class="media-body media-body text-right"><a class="icon-btn btn-sm btn-outline-light close-apps" href="messenger.html#"><i data-feather="x">  </i></a></div>
+                  <div class="media-body media-body text-right"><a class="icon-btn btn-sm btn-outline-light close-apps" ><i data-feather="x">  </i></a></div>
                 </div>
               </div>
               <div class="theme-tab">
@@ -3457,19 +3465,19 @@
                       <li>
                         <div class="chat-box">
                           <div class="media">
-                            <div class="profile"><a class="icon-btn btn-outline-danger btn-xl pull-right rouded15" href="messenger.html#"><i class="fa fa-file-code-o"></i></a></div>
+                            <div class="profile"><a class="icon-btn btn-outline-danger btn-xl pull-right rouded15" ><i class="fa fa-file-code-o"></i></a></div>
                             <div class="details">
                               <h5>messenger.html</h5>
                               <h6>2, octomber 2019</h6>
                             </div>
-                            <div class="media-body"><a class="icon-btn btn-outline-light btn-sm pull-right" href="https://themes.pixelstrap.com/chitchat/assets/doc/messenger.html" target="_blank"><i data-feather="download"></i></a></div>
+                            <div class="media-body"><a class="icon-btn btn-outline-light btn-sm pull-right"  target="_blank"><i data-feather="download"></i></a></div>
                           </div>
                         </div>
                       </li>
                       <li>
                         <div class="chat-box">
                           <div class="media">
-                            <div class="profile"><a class="icon-btn btn-outline-success btn-xl pull-right rouded15" href="messenger.html#"><i class="fa fa-file-video-o"></i></a></div>
+                            <div class="profile"><a class="icon-btn btn-outline-success btn-xl pull-right rouded15" ><i class="fa fa-file-video-o"></i></a></div>
                             <div class="details">
                               <h5>chapter1.MP4</h5>
                               <h6>3, Octomber 2019</h6>
@@ -3481,7 +3489,7 @@
                       <li>
                         <div class="chat-box">
                           <div class="media">
-                            <div class="profile"><a class="icon-btn btn-outline-primary btn-xl pull-right rouded15" href="messenger.html#"><i class="fa fa-file-word-o"></i></a></div>
+                            <div class="profile"><a class="icon-btn btn-outline-primary btn-xl pull-right rouded15" ><i class="fa fa-file-word-o"></i></a></div>
                             <div class="details">
                               <h5>salary.xlsx</h5>
                               <h6>5, Octomber 2019</h6>
@@ -3493,7 +3501,7 @@
                       <li>
                         <div class="chat-box">
                           <div class="media">
-                            <div class="profile"><a class="icon-btn btn-outline-warning btn-xl pull-right rouded15" href="messenger.html#"><i class="fa fa-file-pdf-o"></i></a></div>
+                            <div class="profile"><a class="icon-btn btn-outline-warning btn-xl pull-right rouded15" ><i class="fa fa-file-pdf-o"></i></a></div>
                             <div class="details">
                               <h5>document.pdf</h5>
                               <h6>7, Octomber 2019</h6>
@@ -3505,7 +3513,7 @@
                       <li>
                         <div class="chat-box">
                           <div class="media">
-                            <div class="profile"><a class="icon-btn btn-outline-danger btn-xl pull-right rouded15" href="messenger.html#"><i class="fa fa-file-text-o"></i></a></div>
+                            <div class="profile"><a class="icon-btn btn-outline-danger btn-xl pull-right rouded15" ><i class="fa fa-file-text-o"></i></a></div>
                             <div class="details">
                               <h5>details.txt</h5>
                               <h6>20, Octomber 2019</h6>
@@ -3517,12 +3525,12 @@
                       <li>
                         <div class="chat-box">
                           <div class="media">
-                            <div class="profile"><a class="icon-btn btn-outline-success btn-xl pull-right rouded15" href="messenger.html#"><i class="fa fa-file-code-o"></i></a></div>
+                            <div class="profile"><a class="icon-btn btn-outline-success btn-xl pull-right rouded15" ><i class="fa fa-file-code-o"></i></a></div>
                             <div class="details">
                               <h5>messenger.html</h5>
                               <h6>2, octomber 2019</h6>
                             </div>
-                            <div class="media-body"><a class="icon-btn btn-outline-light btn-sm pull-right" href="https://themes.pixelstrap.com/chitchat/assets/doc/messenger.html" target="_blank"><i data-feather="download"></i></a></div>
+                            <div class="media-body"><a class="icon-btn btn-outline-light btn-sm pull-right"  target="_blank"><i data-feather="download"></i></a></div>
                           </div>
                         </div>
                       </li>
@@ -3539,7 +3547,7 @@
                       <h2>Notes</h2>
                       <h4>Notes List</h4>
                     </div>
-                    <div class="media-body media-body text-right"><a class="icon-btn btn-sm btn-outline-light close-apps" href="messenger.html#"><i data-feather="x"></i></a></div>
+                    <div class="media-body media-body text-right"><a class="icon-btn btn-sm btn-outline-light close-apps" ><i data-feather="x"></i></a></div>
                   </div>
                 </div>
                 <form class="default-form">
@@ -3564,7 +3572,7 @@
                   </div>
                   <h5 class="mb-2">Imporatnt project link</h5>
                   <h6 class="mb-2">Please start testing task of your projects.</h6>
-                  <div class="forward-main"><a class="line fa fa-mail-forward" href="messenger.html#">Forward                         </a></div>
+                  <div class="forward-main"><a class="line fa fa-mail-forward" >Forward                         </a></div>
                 </div>
               </div>
             </li>
@@ -3576,7 +3584,7 @@
                       <h2>Reminders</h2>
                       <h4>Set reminders</h4>
                     </div>
-                    <div class="media-body media-body text-right"><a class="icon-btn btn-sm btn-outline-light close-apps" href="messenger.html#"><i data-feather="x"></i></a></div>
+                    <div class="media-body media-body text-right"><a class="icon-btn btn-sm btn-outline-light close-apps" ><i data-feather="x"></i></a></div>
                   </div>
                 </div>
                 <div class="reminder-content tab-card"><i class="ti-alarm-clock"></i>
@@ -3586,10 +3594,10 @@
                   <h5>Themeforest Discusssion</h5>
                   <h6>Project Discussion</h6><span>11:22 PM | 15 FAB</span>
                   <ul class="reminder-disp">
-                    <li class="reminder-list-toggle"><a class="icon-btn bg-transparent" href="messenger.html#"><i data-feather="more-vertical"></i></a>
+                    <li class="reminder-list-toggle"><a class="icon-btn bg-transparent" ><i data-feather="more-vertical"></i></a>
                       <div class="reminder-contentlist-toggle">
                         <ul>
-                          <li><a class="icon-btn btn-sm" href="messenger.html#"><i data-feather="trash"></i></a>
+                          <li><a class="icon-btn btn-sm" ><i data-feather="trash"></i></a>
                             <h5>Delete</h5>
                           </li>
                         </ul>
@@ -3605,10 +3613,10 @@
                     <h6>Project Discussion</h6>
                     <h6>05:22 PM | 1 JAN</h6>
                     <ul class="reminder-disp">
-                      <li class="reminder-toggle"><a class="icon-btn bg-transparent" href="messenger.html#" data-tippy-content="Quick action"><i data-feather="more-vertical"></i></a>
+                      <li class="reminder-toggle"><a class="icon-btn bg-transparent"  data-tippy-content="Quick action"><i data-feather="more-vertical"></i></a>
                         <div class="reminder-content-toggle">
                           <ul>
-                            <li><a class="icon-btn btn-sm" href="messenger.html#"><i data-feather="trash"></i></a>
+                            <li><a class="icon-btn btn-sm" ><i data-feather="trash"></i></a>
                               <h5>Delete</h5>
                             </li>
                           </ul>
@@ -3638,7 +3646,7 @@
             <li><a class="icon-btn btn-outline-warning btn-sm button-effect" href="reminder"><i data-feather="clock"></i></a>
               <h5>Reminder</h5>
             </li>
-            <li class="close-app"><a class="icon-btn btn-danger" href="messenger.html#" onclick="removedefault()"><i data-feather="x"></i></a>
+            <li class="close-app"><a class="icon-btn btn-danger"  onclick="removedefault()"><i data-feather="x"></i></a>
               <h5>close</h5>
             </li>
           </ul>
@@ -3688,7 +3696,7 @@
               </div>
               <div class="form-group">
                 <input class="form-control" type="text" placeholder="option 1"/>
-                <input class="form-control" type="text" placeholder="option 2"/><a class="add-option" href="messenger.html#">add an option</a>
+                <input class="form-control" type="text" placeholder="option 2"/><a class="add-option" >add an option</a>
               </div>
               <div class="form-group">
                 <div class="post-poll">
@@ -3707,7 +3715,7 @@
                   <input class="allow-check" type="checkbox"/>Allow users to vote anonymously
                 </div>
               </div>
-              <div class="creat-poll-btn"><a class="btn btn-primary button-effect btn-sm" href="messenger.html#" data-dismiss="modal" aria-label="Close">Create poll</a></div>
+              <div class="creat-poll-btn"><a class="btn btn-primary button-effect btn-sm"  data-dismiss="modal" aria-label="Close">Create poll</a></div>
             </form>
           </div>
         </div>
@@ -3834,7 +3842,7 @@
                 <input class="form-control mb-0" type="text" placeholder="add commant (optional)"/>
               </div>
               <div class="form-group mb-0">
-                <div class="btn-snipate"><a class="btn btn-danger button-effect btn-sm mr-3" href="messenger.html#" data-dismiss="modal" aria-label="Close">Cancel</a><a class="btn btn-primary button-effect btn-sm" href="messenger.html#" data-dismiss="modal" aria-label="Close">Create & post</a></div>
+                <div class="btn-snipate"><a class="btn btn-danger button-effect btn-sm mr-3"  data-dismiss="modal" aria-label="Close">Cancel</a><a class="btn btn-primary button-effect btn-sm"  data-dismiss="modal" aria-label="Close">Create & post</a></div>
               </div>
             </form>
           </div>
@@ -3849,8 +3857,8 @@
               <div class="title2">Josephin water</div>
               <h6>log angelina california</h6>
               <ul>
-                <li><a class="icon-btn btn-success button-effect btn-xl is-animating" href="messenger.html#" data-toggle="modal" data-target="#audiorcvcall" data-dismiss="modal"> <i data-feather="phone"></i></a></li>
-                <li>     <a class="icon-btn btn-danger button-effect btn-xl is-animating cancelcall" href="messenger.html#" data-dismiss="modal"> <i data-feather="phone"></i></a></li>
+                <li><a class="icon-btn btn-success button-effect btn-xl is-animating"  data-toggle="modal" data-target="#audiorcvcall" data-dismiss="modal"> <i data-feather="phone"></i></a></li>
+                <li>     <a class="icon-btn btn-danger button-effect btn-xl is-animating cancelcall"  data-dismiss="modal"> <i data-feather="phone"></i></a></li>
               </ul>
             </div>
           </div>
@@ -3872,13 +3880,13 @@
                 <h6>America ,California</h6>
               </div>
               <div id="basicUsage">00:00:00</div>
-              <div class="zoomcontent"><a class="text-dark" href="messenger.html#!" onclick="javascript:toggleFullScreen()" data-tippy-content="Zoom Screen"><img src="assets/assetsmedik/images/logo/maximize.svg" alt="zoom screen"/></a></div>
+              <div class="zoomcontent"><a class="text-dark"  onclick="javascript:toggleFullScreen()" data-tippy-content="Zoom Screen"><img src="assets/assetsmedik/images/logo/maximize.svg" alt="zoom screen"/></a></div>
             </div>
             <div class="center-con text-center">
               <ul>
-                <li><a class="icon-btn btn-light button-effect pause" href="messenger.html#" data-tippy-content="Hold"><i class="ti-control-pause"></i></a></li>
-                <li><a class="icon-btn btn-danger button-effect btn-xl is-animating" href="messenger.html#" data-dismiss="modal" data-tippy-content="Hangup"> <i data-feather="phone"></i></a></li>
-                <li><a class="icon-btn btn-light button-effect mic" href="messenger.html#" data-tippy-content="Mute"><i class="fa fa-microphone"></i></a></li>
+                <li><a class="icon-btn btn-light button-effect pause"  data-tippy-content="Hold"><i class="ti-control-pause"></i></a></li>
+                <li><a class="icon-btn btn-danger button-effect btn-xl is-animating"  data-dismiss="modal" data-tippy-content="Hangup"> <i data-feather="phone"></i></a></li>
+                <li><a class="icon-btn btn-light button-effect mic"  data-tippy-content="Mute"><i class="fa fa-microphone"></i></a></li>
               </ul>
             </div>
           </div>
@@ -3899,8 +3907,8 @@
               <p>Incoming Call</p>
               <h3>Conference Call</h3>
               <ul>
-                <li>     <a class="icon-btn btn-danger button-effect btn-xl is-animating cancelcall" href="messenger.html#" data-dismiss="modal"> <i data-feather="phone"></i></a></li>
-                <li><a class="icon-btn btn-success button-effect btn-xl is-animating" href="messenger.html#"> <i data-feather="video"></i></a></li>
+                <li>     <a class="icon-btn btn-danger button-effect btn-xl is-animating cancelcall"  data-dismiss="modal"> <i data-feather="phone"></i></a></li>
+                <li><a class="icon-btn btn-success button-effect btn-xl is-animating" > <i data-feather="video"></i></a></li>
               </ul>
             </div>
           </div>
@@ -3929,13 +3937,13 @@
           <div class="modal-footer clfooter">
             <div id="basicUsage3">00:00:00</div>
             <ul> 
-              <li><a class="icon-btn btn-light button-effect" href="messenger.html#" data-tippy-content="speaker"><i data-feather="volume-2"></i></a></li>
-              <li><a class="icon-btn btn-light button-effect" href="messenger.html#" data-tippy-content="Camera"><i data-feather="camera-off"></i></a></li>
-              <li><a class="icon-btn btn-light button-effect" href="messenger.html#" data-tippy-content="Add Call"><i data-feather="user-plus"></i></a></li>
-              <li><a class="icon-btn btn-danger button-effect btn-sm is-animating" href="messenger.html#" data-dismiss="modal" data-tippy-content="Hangup"><i data-feather="phone"></i></a></li>
-              <li><a class="icon-btn btn-light button-effect" href="messenger.html#" data-tippy-content="Disable Video"><i data-feather="video-off"></i></a></li>
-              <li><a class="icon-btn btn-light button-effect mic" href="messenger.html#" data-tippy-content="Mute"><i data-feather="mic-off"></i></a></li>
-              <li><a class="icon-btn btn-light button-effect" href="messenger.html#" data-tippy-content="Hold"><i data-feather="pause"></i></a></li>
+              <li><a class="icon-btn btn-light button-effect"  data-tippy-content="speaker"><i data-feather="volume-2"></i></a></li>
+              <li><a class="icon-btn btn-light button-effect"  data-tippy-content="Camera"><i data-feather="camera-off"></i></a></li>
+              <li><a class="icon-btn btn-light button-effect"  data-tippy-content="Add Call"><i data-feather="user-plus"></i></a></li>
+              <li><a class="icon-btn btn-danger button-effect btn-sm is-animating"  data-dismiss="modal" data-tippy-content="Hangup"><i data-feather="phone"></i></a></li>
+              <li><a class="icon-btn btn-light button-effect"  data-tippy-content="Disable Video"><i data-feather="video-off"></i></a></li>
+              <li><a class="icon-btn btn-light button-effect mic"  data-tippy-content="Mute"><i data-feather="mic-off"></i></a></li>
+              <li><a class="icon-btn btn-light button-effect"  data-tippy-content="Hold"><i data-feather="pause"></i></a></li>
             </ul>
           </div>
         </div>
@@ -3950,11 +3958,11 @@
               <div class="title2">Josephin water</div>
               <h6>log angelina california</h6>
               <ul>
-                <li><a class="icon-btn btn-light button-effect mute" href="messenger.html#" data-tippy-content="Mute"><i class="fa fa-microphone"></i></a></li>
-                <li><a class="icon-btn btn-light button-effect mute" href="messenger.html#" data-tippy-content="Speaker"><i class="fa fa-volume-up"></i></a></li>
-                <li><a class="icon-btn btn-danger button-effect btn-xl is-animating" href="messenger.html#" data-tippy-content="Hangup" data-dismiss="modal"> <i data-feather="phone"></i></a></li>
-                <li><a class="icon-btn btn-light button-effect" href="messenger.html#" data-tippy-content="Add Call"><i data-feather="user-plus"></i></a></li>
-                <li><a class="icon-btn btn-light button-effect" href="messenger.html#" data-tippy-content="Pause"><i data-feather="pause"></i></a></li>
+                <li><a class="icon-btn btn-light button-effect mute"  data-tippy-content="Mute"><i class="fa fa-microphone"></i></a></li>
+                <li><a class="icon-btn btn-light button-effect mute"  data-tippy-content="Speaker"><i class="fa fa-volume-up"></i></a></li>
+                <li><a class="icon-btn btn-danger button-effect btn-xl is-animating"  data-tippy-content="Hangup" data-dismiss="modal"> <i data-feather="phone"></i></a></li>
+                <li><a class="icon-btn btn-light button-effect"  data-tippy-content="Add Call"><i data-feather="user-plus"></i></a></li>
+                <li><a class="icon-btn btn-light button-effect"  data-tippy-content="Pause"><i data-feather="pause"></i></a></li>
               </ul>
             </div>
           </div>
